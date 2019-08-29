@@ -1,4 +1,4 @@
-# vxe-table 安装方式
+# vxe-table Demo
 
 ## 1.全局导入方式（完整）
 
