@@ -68,9 +68,7 @@ npm install babel-plugin-import -D
 
 ```javascript
 module.exports = {
-  presets: [
-    '@vue/app'
-  ],
+  // ...,
   plugins: [
     [
       'import',
@@ -79,6 +77,7 @@ module.exports = {
         'style': true
       }
     ]
-  ]
+  ],
+  // ...
 }
 ```
