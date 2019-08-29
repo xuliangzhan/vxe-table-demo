@@ -1,8 +1,8 @@
 # vxe-table Demo
 
-## v2 版本
+## V2 版本
 
-### v2.1 全局导入方式（完整）
+### v2-1 全局导入方式（完整）
 
 ```javascript
 import Vue from 'vue'
@@ -13,7 +13,7 @@ import 'xe-utils'
 Vue.use(VXETable)
 ```
 
-### v2.2全局导入方式（完整，体积稍小）
+### v2-2 全局导入方式（完整，体积稍小）
 
 ```javascript
 import Vue from 'vue'
@@ -28,7 +28,7 @@ XEUtils.mixin(dependencies)
 Vue.use(VXETable)
 ```
 
-### v2.3 按需导入方式（按需，体积最小）
+### v2-3 按需导入方式（按需，体积最小）
 
 ```javascript
 import Vue from 'vue'
@@ -85,9 +85,9 @@ module.exports = {
 
 ***
 
-## v1 版本
+## V1 版本
 
-### v1.1 全局导入方式（完整）
+### v1-1 全局导入方式（完整）
 
 ```javascript
 import Vue from 'vue'
@@ -97,7 +97,7 @@ import 'vxe-table/lib/index.css'
 Vue.use(VXETable)
 ```
 
-### v1.2 按需导入方式（按需，体积较小）
+### v1-2 按需导入方式（按需，体积较小）
 
 ```javascript
 import Vue from 'vue'
