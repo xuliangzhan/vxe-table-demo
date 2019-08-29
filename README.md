@@ -62,7 +62,7 @@ VXETable.setup({
 npm install babel-plugin-import -D
 ```
 
-修改 babel.config.js 配置文件
+修改 .babelrc 或 babel.config.js 配置文件
 
 ```javascript
 module.exports = {
