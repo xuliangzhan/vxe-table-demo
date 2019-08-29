@@ -5,6 +5,7 @@
 ```javascript
 import Vue from 'vue'
 import VXETable from 'vxe-table'
+import 'vxe-table/lib/index.css'
 import 'xe-utils'
 
 Vue.use(VXETable)
@@ -17,6 +18,7 @@ import Vue from 'vue'
 import XEUtils from 'xe-utils/methods/xe-utils'
 import VXETable from 'vxe-table'
 import dependencies from 'vxe-table/lib/utils/dependencies'
+import 'vxe-table/lib/index.css'
 
 // 按需导入依赖函数库
 XEUtils.mixin(dependencies)
