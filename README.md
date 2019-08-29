@@ -2,7 +2,7 @@
 
 ## V2 版本
 
-### v2-1 全局导入方式（完整 ≈ 220KB）
+### v2-1 全局导入方式（完整 ≈ 240KB）
 
 ```javascript
 import Vue from 'vue'
@@ -13,7 +13,7 @@ import 'xe-utils'
 Vue.use(VXETable)
 ```
 
-### v2-2 全局导入方式（完整，体积稍小 >≈ 150KB）
+### v2-2 全局导入方式（完整，体积稍小 >≈ 140KB）
 
 ```javascript
 import Vue from 'vue'
@@ -87,7 +87,7 @@ module.exports = {
 
 ## V1 版本
 
-### v1-1 全局导入方式（完整 ≈ 220KB）
+### v1-1 全局导入方式（完整 ≈ 240KB）
 
 ```javascript
 import Vue from 'vue'
