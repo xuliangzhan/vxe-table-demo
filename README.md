@@ -6,9 +6,9 @@
 
 ```javascript
 import Vue from 'vue'
+import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/index.css'
-import 'xe-utils'
 
 Vue.use(VXETable)
 ```
@@ -91,6 +91,7 @@ module.exports = {
 
 ```javascript
 import Vue from 'vue'
+import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/index.css'
 
