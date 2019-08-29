@@ -55,3 +55,28 @@ VXETable.setup({
   i18n: (key, value) => VXETable.t(zhCNLocat, key)
 })
 ```
+
+安装插件，支持按需加载
+
+```javascript
+npm install babel-plugin-import -D
+```
+
+修改 babel.config.js 配置文件
+
+```javascript
+module.exports = {
+  presets: [
+    '@vue/app'
+  ],
+  plugins: [
+    [
+      'import',
+      {
+        'libraryName': 'vxe-table',
+        'style': true
+      }
+    ]
+  ]
+}
+```
