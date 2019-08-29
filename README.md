@@ -77,7 +77,6 @@ module.exports = {
         'style': true
       }
     ]
-  ],
-  // ...
+  ]
 }
 ```
