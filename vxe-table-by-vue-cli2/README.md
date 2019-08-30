@@ -1,7 +1,5 @@
 # vxe-table-by-vue-cli2
 
-vxe-table 按需导入 >≈ 120KB
-
 ## Build Setup
 
 ``` bash

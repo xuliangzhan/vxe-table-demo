@@ -1,7 +1,5 @@
 # vxe-table-by-vue-cli3
 
-vxe-table 按需导入 >≈ 120KB
-
 ## Project setup
 ```
 npm install

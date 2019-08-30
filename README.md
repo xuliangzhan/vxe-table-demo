@@ -13,7 +13,7 @@ import 'vxe-table/lib/index.css'
 Vue.use(VXETable)
 ```
 
-### v2-2 全局导入方式（完整，体积稍小 >≈ 140KB）
+### v2-2 全局导入方式（完整，体积稍小 ≈ 220KB）
 
 ```javascript
 import Vue from 'vue'
@@ -102,7 +102,7 @@ Vue.use(VXETable)
 
 ```javascript
 import Vue from 'vue'
-import XEUtils from 'xe-utils/methods/xe-utils'
+import 'xe-utils'
 import {
   VXETable,
   Icon,
