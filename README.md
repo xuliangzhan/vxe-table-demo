@@ -3,6 +3,57 @@
 require: Vue 2.6+  
 require: xe-utils 2.2+
 
+## 源码导入方式（按需，体积最小 >≈ 100KB）
+
+```scss
+@import './variable.scss';
+@import './icon.scss';
+@import './table.scss';
+@import './column.scss';
+@import './header.scss';
+@import './body.scss';
+@import './footer.scss';
+```
+
+src/plugins/utils.js
+
+```javascript
+import XEUtils from 'xe-utils/methods/xe-utils'
+import dependencies from 'vxe-table/packages/utils/dependencies'
+
+// 按需导入依赖函数库
+XEUtils.mixin(dependencies)
+```
+
+src/plugins/xtable.js
+
+```javascript
+import VXETable from 'vxe-table/packages/v-x-e-table'
+import Table from 'vxe-table/packages/table'
+import Header from 'vxe-table/packages/header'
+import Body from 'vxe-table/packages/body'
+import Column from 'vxe-table/packages/column'
+import zhCNLocat from 'vxe-table/packages/locale/lang/zh-CN'
+
+// 按需导入需要的模块
+Vue.use(Table)
+Vue.use(Column)
+Vue.use(Header)
+Vue.use(Body)
+
+// 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
+VXETable.setup({
+  i18n: (key, value) => VXETable.t(zhCNLocat, key)
+})
+```
+
+main.js
+
+```javascript
+import './plugins/utils'
+import './plugins/xtable'
+```
+
 ## V2 版本
 
 ### v2-1 全局导入方式（完整 ≈ 240KB）
@@ -47,7 +98,7 @@ import './plugins/utils'
 import './plugins/xtable'
 ```
 
-### v2-3 按需导入方式（按需，体积最小 >≈ 120KB）
+### v2-3 按需导入方式（按需，体积最优 >≈ 120KB）
 
 src/plugins/utils.js
 
