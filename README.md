@@ -15,6 +15,18 @@ Vue.use(VXETable)
 
 ### v2-2 全局导入方式（完整，体积稍小 ≈ 220KB）
 
+src/plugins/utils.js
+
+```javascript
+import XEUtils from 'xe-utils/methods/xe-utils'
+import dependencies from 'vxe-table/lib/utils/dependencies'
+
+// 按需导入依赖函数库
+XEUtils.mixin(dependencies)
+```
+
+src/plugins/xtable.js
+
 ```javascript
 import Vue from 'vue'
 import XEUtils from 'xe-utils/methods/xe-utils'
@@ -22,17 +34,32 @@ import VXETable from 'vxe-table'
 import dependencies from 'vxe-table/lib/utils/dependencies'
 import 'vxe-table/lib/index.css'
 
-// 按需导入依赖函数库
-XEUtils.mixin(dependencies)
-
 Vue.use(VXETable)
 ```
 
-### v2-3 按需导入方式（按需，体积最小 >≈ 120KB）
+main.js
+
+```javascript
+import './plugins/utils'
+import './plugins/xtable'
+```
+
+### 按需导入方式 3（按需，体积最小 >≈ 120KB）
+
+src/plugins/utils.js
+
+```javascript
+import XEUtils from 'xe-utils/methods/xe-utils'
+import dependencies from 'vxe-table/lib/utils/dependencies'
+
+// 按需导入依赖函数库
+XEUtils.mixin(dependencies)
+```
+
+src/plugins/xtable.js
 
 ```javascript
 import Vue from 'vue'
-import XEUtils from 'xe-utils/methods/xe-utils'
 import {
   VXETable,
   Icon,
@@ -42,10 +69,6 @@ import {
   Column
 } from 'vxe-table'
 import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
-import dependencies from 'vxe-table/lib/utils/dependencies'
-
-// 按需导入依赖函数库
-XEUtils.mixin(dependencies)
 
 // 按需导入需要的模块
 Vue.use(Icon)
@@ -58,6 +81,13 @@ Vue.use(Column)
 VXETable.setup({
   i18n: (key, value) => VXETable.t(zhCNLocat, key)
 })
+```
+
+main.js
+
+```javascript
+import './plugins/utils'
+import './plugins/xtable'
 ```
 
 安装插件，支持按需加载
