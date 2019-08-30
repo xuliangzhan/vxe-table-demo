@@ -114,7 +114,7 @@ module.exports = {
 }
 ```
 
-## 源码导入方式（按需，体积最小 >≈ 100KB）
+## 未编译的源码导入方式（按需，体积最小 >≈ 100KB）
 
 ```scss
 @import './variable.scss';
