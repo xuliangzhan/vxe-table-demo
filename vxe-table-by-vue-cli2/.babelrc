@@ -11,13 +11,13 @@
   "plugins": [
     "transform-vue-jsx", 
     "transform-runtime", 
-    // [
-    //   "import",
-    //   {
-    //     "libraryName": "vxe-table",
-    //     "style": true
-    //   }
-    // ]
+    [
+      "import",
+      {
+        "libraryName": "vxe-table",
+        "style": true
+      }
+    ]
   ],
   "env": {
     "test": {
