@@ -1,5 +1,8 @@
 # vxe-table Demo
 
+require: Vue 2.6+
+require: xe-utils 2.2+
+
 ## V2 版本
 
 ### v2-1 全局导入方式（完整 ≈ 240KB）
