@@ -3,7 +3,7 @@
 require: Vue 2.6+  
 require: xe-utils 2.2+
 
-## 全局导入方式（完整 ≈ 240KB）
+## 全局导入方式，所有版本通用（完整 ≈ 240KB）
 
 ```javascript
 import Vue from 'vue'
