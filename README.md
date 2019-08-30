@@ -116,14 +116,16 @@ module.exports = {
 
 ## 未编译的源码导入方式（按需，体积最小 >≈ 100KB）
 
+在 scss 样式文件中引用
+
 ```scss
-@import './variable.scss';
-@import './icon.scss';
-@import './table.scss';
-@import './column.scss';
-@import './header.scss';
-@import './body.scss';
-@import './footer.scss';
+@import 'vxe-table/styles/variable.scss';
+@import 'vxe-table/styles/icon.scss';
+@import 'vxe-table/styles/table.scss';
+@import 'vxe-table/styles/column.scss';
+@import 'vxe-table/styles/header.scss';
+@import 'vxe-table/styles/body.scss';
+@import 'vxe-table/styles/footer.scss';
 ```
 
 src/plugins/utils.js
