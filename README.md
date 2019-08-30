@@ -1,6 +1,6 @@
 # vxe-table Demo
 
-require: Vue 2.6+
+require: Vue 2.6+  
 require: xe-utils 2.2+
 
 ## V2 版本
