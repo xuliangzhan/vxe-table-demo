@@ -125,7 +125,6 @@ module.exports = {
 @import 'vxe-table/styles/column.scss';
 @import 'vxe-table/styles/header.scss';
 @import 'vxe-table/styles/body.scss';
-@import 'vxe-table/styles/footer.scss';
 ```
 
 src/plugins/utils.js
