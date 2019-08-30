@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import XEUtils from 'xe-utils/methods/xe-utils'
 import {
   VXETable,
   Icon,
@@ -9,10 +8,6 @@ import {
   Column
 } from 'vxe-table'
 import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
-import dependencies from 'vxe-table/lib/utils/dependencies'
-
-// 按需导入依赖函数库
-XEUtils.mixin(dependencies)
 
 // 按需导入需要的模块
 Vue.use(Icon)
