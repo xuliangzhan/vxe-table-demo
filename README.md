@@ -45,7 +45,7 @@ import './plugins/utils'
 import './plugins/xtable'
 ```
 
-## 按需导入方式（按需，体积稍优 >≈ 140KB）
+## 按需导入方式（按需，通用方式 >≈ 140KB）
 
 src/plugins/utils.js
 
