@@ -1,4 +1,4 @@
-# vxe-table Demo
+# vxe-table 使用的正确姿势
 
 require: Vue 2.6+  
 require: xe-utils 2.2+
