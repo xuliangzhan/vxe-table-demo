@@ -1,17 +1,31 @@
-# vxe-table 使用的正确姿势
+# vxe-table 使用任意一种方式即可
 
 require: Vue 2.6+  
 require: xe-utils 2.2+
 
 ## 全局导入方式，所有版本通用（完整 ≈ 240KB）
 
+src/plugins/utils.js
+
+```javascript
+import 'xe-utils'
+```
+
+src/plugins/xtable.js
+
 ```javascript
 import Vue from 'vue'
-import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/index.css'
 
 Vue.use(VXETable)
+```
+
+main.js
+
+```javascript
+import './plugins/utils'
+import './plugins/xtable'
 ```
 
 ## 全局导入方式（完整，体积稍小 ≈ 220KB）
@@ -45,7 +59,7 @@ import './plugins/utils'
 import './plugins/xtable'
 ```
 
-## 按需导入方式（按需，通用方式 >≈ 140KB）
+## 按需导入方式（按需，体积最优 >≈ 140KB）
 
 src/plugins/utils.js
 
