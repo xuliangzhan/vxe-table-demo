@@ -1,4 +1,4 @@
-# vxe-table 使用任意一种方式即可
+# vxe-table 使用任意一种方式安装即可
 
 require: Vue 2.6+  
 require: xe-utils 2.2+
