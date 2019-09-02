@@ -10,14 +10,7 @@
   ],
   "plugins": [
     "transform-vue-jsx", 
-    "transform-runtime", 
-    [
-      "import",
-      {
-        "libraryName": "vxe-table",
-        "style": true
-      }
-    ]
+    "transform-runtime"
   ],
   "env": {
     "test": {

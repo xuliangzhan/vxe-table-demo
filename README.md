@@ -45,6 +45,71 @@ import './plugins/utils'
 import './plugins/xtable'
 ```
 
+## 按需导入方式（按需，体积稍优 >≈ 140KB）
+
+src/plugins/utils.js
+
+```javascript
+import 'xe-utils'
+```
+
+src/plugins/xtable.js
+
+```javascript
+import Vue from 'vue'
+import {
+  VXETable,
+  Icon,
+  Table,
+  Header,
+  Body,
+  Column
+} from 'vxe-table'
+import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
+
+// 按需导入需要的模块
+Vue.use(Icon)
+Vue.use(Table)
+Vue.use(Header)
+Vue.use(Body)
+Vue.use(Column)
+
+// 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
+VXETable.setup({
+  i18n: (key, value) => VXETable.t(zhCNLocat, key)
+})
+```
+
+main.js
+
+```javascript
+import './plugins/utils'
+import './plugins/xtable'
+```
+
+安装插件，支持按需加载
+
+```javascript
+npm install babel-plugin-import -D
+```
+
+修改 .babelrc 或 babel.config.js 配置文件
+
+```javascript
+module.exports = {
+  // ...,
+  plugins: [
+    [
+      'import',
+      {
+        'libraryName': 'vxe-table',
+        'style': true
+      }
+    ]
+  ]
+}
+```
+
 ## 按需导入方式（按需，体积最优 >≈ 120KB）
 
 src/plugins/utils.js
