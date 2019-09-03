@@ -1,9 +1,17 @@
 # vxe-table 使用任意一种方式安装即可
 
+## 安装报错信息
+
+### 引用顺序 xe-utils 必须在 vxe-table 之前，否则必然报错 xeUtils.default.browse is not a function
+
+![install error](https://github.com/xuliangzhan/vxe-table/blob/master/public/error/install.png?raw=true)
+
+## 安装指南
+
 require: Vue 2.6+  
 require: xe-utils 2.2+
 
-## 全局导入方式，所有版本通用（完整 ≈ 240KB）
+### 全局导入方式，所有版本通用（完整 ≈ 240KB）
 
 src/plugins/utils.js
 
@@ -28,7 +36,7 @@ import './plugins/utils'
 import './plugins/xtable'
 ```
 
-## 全局导入方式（完整，体积稍小 ≈ 220KB）
+### 全局导入方式（完整，体积稍小 ≈ 220KB）
 
 src/plugins/utils.js
 
@@ -59,7 +67,7 @@ import './plugins/utils'
 import './plugins/xtable'
 ```
 
-## 按需导入方式（按需，体积最优 >≈ 140KB）
+### 按需导入方式（按需，体积最优 >≈ 140KB）
 
 src/plugins/utils.js
 
@@ -124,7 +132,7 @@ module.exports = {
 }
 ```
 
-## 按需导入方式（按需，体积最优 >≈ 120KB）
+### 按需导入方式（按需，体积最优 >≈ 120KB）
 
 src/plugins/utils.js
 
@@ -193,7 +201,7 @@ module.exports = {
 }
 ```
 
-## 未编译的源码导入方式（按需，体积最小 >≈ 100KB）
+### 未编译的源码导入方式（按需，体积最小 >≈ 100KB）
 
 在 scss 样式文件中引用
 

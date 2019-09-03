@@ -1,4 +1,6 @@
 import Vue from 'vue'
+import 'xe-utils'
+
 import {
   VXETable,
   Icon,
