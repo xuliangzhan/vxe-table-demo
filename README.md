@@ -2,7 +2,7 @@
 
 ## 安装报错信息
 
-### 1. 引用的依赖库 xe-utils 必须在 vxe-table 之前，否则必然报错
+### 1. 引用的依赖库 xe-utils 必须在 vxe-table 之前，否则必然抛异常
 
 ![install error](https://github.com/xuliangzhan/vxe-table/blob/master/public/error/install.png?raw=true)
 
