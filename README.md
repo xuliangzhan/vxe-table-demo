@@ -1,4 +1,4 @@
-# vxe-table 项目示例
+# vxe-table 使用示例
 
 ## 安装报错信息
 
