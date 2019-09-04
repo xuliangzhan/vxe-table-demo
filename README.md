@@ -4,7 +4,7 @@
 
 ### 1. 引用顺序错误导致依赖报错
 
-由于 vxe-table@2.5+ 以上版本使用了最小化打包的方式，所以引用依赖库 xe-utils 时必须要在 vxe-table 之前，否则就会报错
+该问题 V2.5 以下版本不受影响，由于 V2.5+ 以上版本使用了最小化打包的方式，所以依赖库 xe-utils 必须要在 vxe-table 之前引用，否则就会报错
 
 ![install error](https://github.com/xuliangzhan/vxe-table/blob/master/public/error/install.png?raw=true)
 
