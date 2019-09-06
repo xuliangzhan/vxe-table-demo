@@ -11,7 +11,7 @@
     "vue": "^2.6.10",
     "vue-router": "^3.0.1",
     "vxe-table": "^2.5.8",
-    "xe-utils": "^2.2.2"
+    "xe-utils": "^2.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
