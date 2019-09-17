@@ -11,7 +11,7 @@
 
 ## 安装指南
 
-require: Vue 2.6+  
+require: vue 2.6+  
 require: xe-utils 2.2+
 
 ### 1. 全局导入方式，所有版本通用（完整 ≈ 240KB）
