@@ -14,7 +14,7 @@
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
     "vxe-table": "^2.5.22",
-    "xe-utils": "^2.2.4"
+    "xe-utils": "^2.2.8"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
