@@ -82,6 +82,7 @@ src/plugins/xtable.js
 
 ```javascript
 import Vue from 'vue'
+import XEUtils from 'xe-utils'
 import {
   VXETable,
   Icon,
@@ -102,7 +103,7 @@ Vue.use(Table)
 
 // 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
 VXETable.setup({
-  i18n: (key, value) => VXETable.t(zhCNLocat, key)
+  i18n: (key, value) => XEUtils.get(zhCNLocat, key)
 })
 ```
 
@@ -152,6 +153,7 @@ src/plugins/xtable.js
 
 ```javascript
 import Vue from 'vue'
+import XEUtils from 'xe-utils/methods/xe-utils'
 import {
   VXETable,
   Icon,
@@ -172,7 +174,7 @@ Vue.use(Table)
 
 // 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
 VXETable.setup({
-  i18n: (key, value) => VXETable.t(zhCNLocat, key)
+  i18n: (key, value) => XEUtils.get(zhCNLocat, key)
 })
 ```
 
@@ -232,6 +234,7 @@ XEUtils.mixin(dependencies)
 src/plugins/xtable.js
 
 ```javascript
+import XEUtils from 'xe-utils/methods/xe-utils'
 import VXETable from 'vxe-table/packages/v-x-e-table'
 import Header from 'vxe-table/packages/header'
 import Body from 'vxe-table/packages/body'
@@ -248,7 +251,7 @@ Vue.use(Table)
 
 // 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
 VXETable.setup({
-  i18n: (key, value) => VXETable.t(zhCNLocat, key)
+  i18n: (key, value) => XEUtils.get(zhCNLocat, key)
 })
 ```
 
