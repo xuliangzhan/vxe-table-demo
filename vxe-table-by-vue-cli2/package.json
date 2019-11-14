@@ -10,8 +10,8 @@
   "dependencies": {
     "vue": "^2.6.10",
     "vue-router": "^3.0.1",
-    "vxe-table": "^2.6.19",
-    "xe-utils": "^2.2.11"
+    "vxe-table": "^2.6.20",
+    "xe-utils": "^2.2.12"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
