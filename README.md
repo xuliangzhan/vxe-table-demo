@@ -11,7 +11,7 @@
 
 ## 安装指南
 
-如果是古老的 IE 浏览器可以使用 [babel-polyfill](https://www.npmjs.com/package/babel-polyfill) 提供兼容性
+如果是古老的 IE 浏览器需要使用 [babel-polyfill](https://www.npmjs.com/package/babel-polyfill) 提供兼容性
 
 require: vue 2.6+  
 require: xe-utils 2.2+
