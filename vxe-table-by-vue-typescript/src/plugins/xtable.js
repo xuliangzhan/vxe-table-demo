@@ -15,10 +15,10 @@ VXETable.setup({
   i18n: (key, value) => XEUtils.get(zhCNLocat, key)
 })
 
-// 按需导入需要的模块
+// 按需导入依赖的模块
 Vue.use(Icon)
 Vue.use(Header)
 Vue.use(Body)
 Vue.use(Column)
-// 安装核心库
+// 最后安装核心库
 Vue.use(Table)
