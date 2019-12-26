@@ -13,7 +13,7 @@
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "nuxt": "^2.0.0",
-    "vxe-table": "^2.7.10",
+    "vxe-table": "^2.7.12",
     "xe-utils": "^2.2.16"
   },
   "devDependencies": {
