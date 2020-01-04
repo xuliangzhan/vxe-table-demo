@@ -1,6 +1,9 @@
 import { DELETE, POST, GET } from 'xe-ajax-mock'
 import Helper from './helper'
 
+GET('/api/conf/role/list', require('./conf/role.json'))
+GET('/api/conf/sex/list', require('./conf/sex.json'))
+
 class UserVO {
   constructor (data) {
     this.id = data.id

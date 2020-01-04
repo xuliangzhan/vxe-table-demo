@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vxe-grid v-bind="xGridOptions"></vxe-grid>
+    <vxe-grid v-bind="xGridOptions" :loading="loading"></vxe-grid>
   </div>
 </template>
 
@@ -9,11 +9,22 @@
 export default {
   data () {
     return {
-      xGridOptions: {
+      loading: false,
+      xGridOptions: null
+    }
+  },
+  created () {
+    this.loading = true
+    // 模拟后台异步读取配置文件
+    setTimeout(() => {
+      const xGridConfig = {
         resizable: true,
         height: 528,
         filterConfig: {
           remote: true
+        },
+        sortConfig: {
+          trigger: 'cell'
         },
         checkboxConfig: {
           labelField: 'id',
@@ -28,7 +39,7 @@ export default {
         editRules: {
           name: [
             { required: true, message: '名称必须填写' },
-            { min: 3, max: 50, message: '名称长度在 3 到 50 个字符' }
+            { pattern: '\\w{3,50}', message: '名称长度在 3 到 50 个字符' }
           ],
           role: [
             { required: true, message: '角色必须填写' }
@@ -36,7 +47,7 @@ export default {
         },
         pagerConfig: {
           pageSize: 15,
-          pageSizes: [5, 10, 20, 50, 100, 200, 500, 1000]
+          pageSizes: [5, 15, 20, 50, 100]
         },
         proxyConfig: {
           sort: true,
@@ -53,6 +64,7 @@ export default {
             { code: 'mark_cancel', name: 'Mark', icon: 'fa fa-bookmark-o' },
             { code: 'save', name: 'Save', icon: 'fa fa-save' }
           ],
+          zoom: true,
           refresh: true,
           custom: true
         },
@@ -62,24 +74,14 @@ export default {
           { field: 'name', title: 'Name', remoteSort: true, editRender: { name: 'input' } },
           { field: 'nickname', title: 'Nickname', remoteSort: true, editRender: { name: 'input' } },
           { field: 'age', title: 'Age', remoteSort: true, editRender: { name: 'input' } },
-          {
-            field: 'role',
-            title: 'Role',
-            remoteSort: true,
-            width: 200,
-            filters: [
-              { label: '前端开发', value: '前端' },
-              { label: '后端开发', value: '后端' },
-              { label: '测试', value: '测试' },
-              { label: '程序员鼓励师', value: '程序员鼓励师' }
-            ],
-            filterMultiple: false,
-            editRender: { name: 'input' }
-          },
+          { field: 'sex', title: 'Sex', remoteSort: true, editRender: { name: 'select', options: '/api/conf/sex/list' } },
+          { field: 'role', title: 'Role', width: 200, filters: '/api/conf/role/list', filterMultiple: false, remoteSort: true, editRender: { name: 'input' } },
           { field: 'describe', title: 'Describe', showOverflow: true, editRender: { name: 'input' } }
         ]
       }
-    }
+      this.loading = false
+      this.xGridOptions = xGridConfig
+    }, 300)
   }
 }
 </script>

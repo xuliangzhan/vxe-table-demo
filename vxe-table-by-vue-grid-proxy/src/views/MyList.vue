@@ -31,19 +31,8 @@ export default {
           { field: 'name', title: 'Name', remoteSort: true },
           { field: 'nickname', title: 'Nickname', remoteSort: true },
           { field: 'age', title: 'Age', remoteSort: true },
-          {
-            field: 'role',
-            title: 'Role',
-            remoteSort: true,
-            width: 200,
-            filters: [
-              { label: '前端开发', value: '前端' },
-              { label: '后端开发', value: '后端' },
-              { label: '测试', value: '测试' },
-              { label: '程序员鼓励师', value: '程序员鼓励师' }
-            ],
-            filterMultiple: false
-          },
+          { field: 'sex', title: 'Sex', editRender: { name: 'select', options: '/api/conf/sex/list' } },
+          { field: 'role', title: 'Role', remoteSort: true, width: 200, filters: '/api/conf/role/list', filterMultiple: false },
           { field: 'describe', title: 'Describe', showOverflow: true }
         ]
       }

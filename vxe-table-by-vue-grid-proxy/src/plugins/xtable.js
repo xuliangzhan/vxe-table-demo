@@ -6,11 +6,49 @@ import 'vxe-table/lib/index.css'
 
 Vue.use(VXETable)
 
+function sendAjax (options, callback, defaultCallback) {
+  if (options && !XEUtils.isArray(options)) {
+    const ajaxOpts = Object.assign({ method: 'GET' }, XEUtils.isString(options) ? { url: options } : options)
+    XEAjax(ajaxOpts).then(response => response.json()).then(callback)
+    if (defaultCallback) {
+      defaultCallback()
+    } else {
+      callback()
+    }
+  }
+}
+
 // 设置默认参数
 VXETable.setup({
   grid: {
-    // 封装统一的代理配置，任何支持 Promise 的异步请求库都能对接，不同的库可能用法会不一样，基本大同小异（fetch、jquery、axios、xe-ajax）
+    /**
+     * Grid 封装统一的数据代理
+     * 任何支持 Promise 的异步请求库都能对接，不同的库可能用法会不一样，基本大同小异（fetch、jquery、axios、xe-ajax）
+     * 支持增删改查自动发送请求
+     * 支持 filters 自动请求数据
+     * 支持 edit-render 下拉框自动请求数据
+     */
     proxyConfig: {
+      // 列初始化之前
+      beforeColumn ({ $grid, column }) {
+        const { filters, editRender } = column
+        // 处理筛选请求
+        sendAjax(filters, data => {
+          $grid.setFilter(column, data)
+        }, () => {
+          column.filters = []
+        })
+        // 处理渲染器请求
+        if (editRender) {
+          switch (editRender.name) {
+            case 'select':
+              sendAjax(editRender.options, data => {
+                editRender.options = data || []
+              })
+              break
+          }
+        }
+      },
       // 查询
       beforeQuery (params) {
         const { options, page, sort, filters } = params
