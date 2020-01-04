@@ -11,8 +11,8 @@
     "core-js": "^3.4.3",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
-    "vxe-table": "^2.7.14",
-    "xe-utils": "^2.2.16"
+    "vxe-table": "^2.7.20",
+    "xe-utils": "^2.3.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
