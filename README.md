@@ -24,7 +24,7 @@ src/plugins/utils.js
 import 'xe-utils'
 ```
 
-src/plugins/xtable.js
+src/plugins/table.js
 
 ```javascript
 import Vue from 'vue'
@@ -38,7 +38,7 @@ main.js
 
 ```javascript
 import './plugins/utils'
-import './plugins/xtable'
+import './plugins/table'
 ```
 
 ### 2. 全局导入方式（完整，体积稍小 ≈ 220KB）
@@ -53,7 +53,7 @@ import dependencies from 'vxe-table/lib/utils/dependencies'
 XEUtils.mixin(dependencies)
 ```
 
-src/plugins/xtable.js
+src/plugins/table.js
 
 ```javascript
 import Vue from 'vue'
@@ -69,7 +69,7 @@ main.js
 
 ```javascript
 import './plugins/utils'
-import './plugins/xtable'
+import './plugins/table'
 ```
 
 ### 3. 按需导入方式（按需，体积最优 >≈ 140KB）
@@ -80,7 +80,7 @@ src/plugins/utils.js
 import 'xe-utils'
 ```
 
-src/plugins/xtable.js
+src/plugins/table.js
 
 ```javascript
 import Vue from 'vue'
@@ -113,7 +113,7 @@ main.js
 
 ```javascript
 import './plugins/utils'
-import './plugins/xtable'
+import './plugins/table'
 ```
 
 安装插件，支持按需加载
@@ -151,7 +151,7 @@ import dependencies from 'vxe-table/lib/utils/dependencies'
 XEUtils.mixin(dependencies)
 ```
 
-src/plugins/xtable.js
+src/plugins/table.js
 
 ```javascript
 import Vue from 'vue'
@@ -184,7 +184,7 @@ main.js
 
 ```javascript
 import './plugins/utils'
-import './plugins/xtable'
+import './plugins/table'
 ```
 
 安装插件，支持按需加载
@@ -233,7 +233,7 @@ import dependencies from 'vxe-table/packages/utils/dependencies'
 XEUtils.mixin(dependencies)
 ```
 
-src/plugins/xtable.js
+src/plugins/table.js
 
 ```javascript
 import XEUtils from 'xe-utils/methods/xe-utils'
@@ -261,5 +261,5 @@ main.js
 
 ```javascript
 import './plugins/utils'
-import './plugins/xtable'
+import './plugins/table'
 ```

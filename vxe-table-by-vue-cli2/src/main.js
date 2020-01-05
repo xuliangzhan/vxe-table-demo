@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 
 import './plugins/utils'
-import './plugins/xtable'
+import './plugins/table'
 
 Vue.config.productionTip = false
 

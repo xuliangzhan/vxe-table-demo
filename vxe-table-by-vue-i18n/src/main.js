@@ -5,7 +5,7 @@ import store from './store'
 import i18n from './i18n'
 
 import './plugins/utils'
-import './plugins/xtable'
+import './plugins/table'
 
 Vue.config.productionTip = false
 

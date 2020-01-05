@@ -30,7 +30,7 @@ module.exports = {
   */
   plugins: [
     '@/plugins/utils',
-    '@/plugins/xtable'
+    '@/plugins/table'
   ],
   /*
   ** Nuxt.js dev-modules
