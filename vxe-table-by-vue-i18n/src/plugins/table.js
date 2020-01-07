@@ -9,5 +9,11 @@ VXETable.setup({
   // 集成 vue-i18n
   i18n: key => i18n.t(key),
   // 对参数的内容自动进行国际化翻译
-  translate: key => i18n.t(key)
+  translate (key) {
+    // 只翻译 "app." 开头的键值
+    if (key && key.indexOf('app.') > -1) {
+      return i18n.t(key)
+    }
+    return key
+  }
 })
