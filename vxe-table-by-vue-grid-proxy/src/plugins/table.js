@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import store from '../store'
 import XEAjax from 'xe-ajax'
 import XEUtils from 'xe-utils'
 import VXETable from 'vxe-table'
@@ -6,9 +7,9 @@ import 'vxe-table/lib/index.css'
 
 Vue.use(VXETable)
 
-function sendAjax (options, callback, defaultCallback) {
-  if (options && !XEUtils.isArray(options)) {
-    const ajaxOpts = Object.assign({ method: 'GET' }, XEUtils.isString(options) ? { url: options } : options)
+function sendAjax (config, callback, defaultCallback) {
+  if (config && !XEUtils.isArray(config)) {
+    const ajaxOpts = Object.assign({ method: 'GET' }, XEUtils.isString(config) ? { url: config } : config)
     XEAjax(ajaxOpts).then(response => response.json()).then(callback)
     if (defaultCallback) {
       defaultCallback()
@@ -40,11 +41,22 @@ VXETable.setup({
         })
         // 处理渲染器请求
         if (editRender) {
+          let config = editRender.options
           switch (editRender.name) {
             case 'select':
-              sendAjax(editRender.options, data => {
-                editRender.options = data || []
-              })
+              // 如果是字典（从 vuex 里面读取配置）
+              if (/^\$+/.test(config)) {
+                const key = config.slice(1)
+                if (!store.getters.dictionaryMap[key]) {
+                  console.error('读取字典配置失败！key=' + key)
+                }
+                editRender.options = store.getters.dictionaryMap[key] || []
+              } else {
+                // 如果是异步请求
+                sendAjax(config, data => {
+                  editRender.options = data || []
+                })
+              }
               break
           }
         }
