@@ -7,14 +7,27 @@ import 'vxe-table/lib/index.css'
 
 Vue.use(VXETable)
 
-function sendAjax (config, callback, defaultCallback) {
+function handleListData (config, callback, defaultCallback) {
   if (config && !XEUtils.isArray(config)) {
-    const ajaxOpts = Object.assign({ method: 'GET' }, XEUtils.isString(config) ? { url: config } : config)
-    XEAjax(ajaxOpts).then(response => response.json()).then(callback)
-    if (defaultCallback) {
-      defaultCallback()
+    defaultCallback()
+    // 如果是字典
+    if (/^\$+/.test(config)) {
+      const key = config.slice(1)
+      store.dispatch('loadDataDictionary')
+        .catch(e => e)
+        .then(() => {
+          if (!store.getters.ddMap[key]) {
+            console.error('读取字典配置失败！key=' + key)
+          }
+          callback(store.getters.ddMap[key])
+        })
     } else {
-      callback()
+      // 如果是异步请求
+      const ajaxOpts = Object.assign({ method: 'GET' }, XEUtils.isString(config) ? { url: config } : config)
+      XEAjax(ajaxOpts)
+        .then(response => response.json())
+        .catch(e => e)
+        .then(callback)
     }
   }
 }
@@ -34,7 +47,7 @@ VXETable.setup({
       beforeColumn ({ $grid, column }) {
         const { filters, editRender } = column
         // 处理筛选请求
-        sendAjax(filters, data => {
+        handleListData(filters, data => {
           $grid.setFilter(column, data)
         }, () => {
           column.filters = []
@@ -44,24 +57,16 @@ VXETable.setup({
           let config = editRender.options
           switch (editRender.name) {
             case 'select':
-              // 如果是字典（从 vuex 里面读取配置）
-              if (/^\$+/.test(config)) {
-                const key = config.slice(1)
-                if (!store.getters.dictionaryMap[key]) {
-                  console.error('读取字典配置失败！key=' + key)
-                }
-                editRender.options = store.getters.dictionaryMap[key] || []
-              } else {
-                // 如果是异步请求
-                sendAjax(config, data => {
-                  editRender.options = data || []
-                })
-              }
+              handleListData(config, data => {
+                editRender.options = data || []
+              }, () => {
+                editRender.options = []
+              })
               break
           }
         }
       },
-      // 查询
+      // 统一处理查询规则
       beforeQuery (params) {
         const { options, page, sort, filters } = params
         if (XEUtils.isFunction(options)) {
@@ -82,7 +87,7 @@ VXETable.setup({
         }
         return XEAjax(ajaxOpts).then(response => response.json())
       },
-      // 删除
+      // 统一处理删除规则
       beforeDelete (params) {
         const { options, body } = params
         if (XEUtils.isFunction(options)) {
@@ -91,7 +96,7 @@ VXETable.setup({
         const ajaxOpts = Object.assign({ method: 'POST', body }, XEUtils.isString(options) ? { url: options } : options)
         return XEAjax(ajaxOpts).then(response => response.json())
       },
-      // 保存
+      // 统一处理保存规则
       beforeSave (params) {
         const { options, body } = params
         if (XEUtils.isFunction(options)) {
