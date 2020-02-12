@@ -5,7 +5,7 @@
       <router-link to="/page">Page</router-link> |
       <router-link to="/edit">Edit</router-link>
     </div>
-    <p>只需一串 json 数据创建 CRUD 表格就是这么简单！</p>
+    <p>只需一串 json 数据就能玩的飞起，创建 CRUD 表格就是如此简单！</p>
     <router-view/>
   </div>
 </template>

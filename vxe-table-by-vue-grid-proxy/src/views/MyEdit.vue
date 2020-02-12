@@ -20,6 +20,7 @@ export default {
       const xGridConfig = {
         resizable: true,
         height: 528,
+        exportConfig: {},
         filterConfig: {
           remote: true
         },
@@ -70,6 +71,7 @@ export default {
             { code: 'mark_cancel', name: 'Mark', icon: 'fa fa-bookmark-o' },
             { code: 'save', name: 'Save', icon: 'fa fa-save' }
           ],
+          export: true,
           zoom: true,
           refresh: true,
           custom: true
