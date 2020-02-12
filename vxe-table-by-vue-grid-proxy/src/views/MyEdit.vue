@@ -74,6 +74,7 @@ export default {
           { field: 'name', title: 'Name', remoteSort: true, editRender: { name: 'input' } },
           { field: 'nickname', title: 'Nickname', remoteSort: true, editRender: { name: 'input' } },
           { field: 'age', title: 'Age', remoteSort: true, editRender: { name: 'input' } },
+          { field: 'type', title: 'Type', cellRender: { name: 'DICT', props: { code: 'OPERATE_STATUS' } } },
           { field: 'status', title: 'Status', editRender: { name: 'select', options: '$COLOR_STATUS' } },
           { field: 'sex', title: 'Sex', filters: '$SEX_LIST', filterMultiple: false, remoteSort: true, editRender: { name: 'select', options: '/api/conf/sex/list' } },
           { field: 'role', title: 'Role', width: 200, filters: '/api/conf/role/list', filterMultiple: false, remoteSort: true, editRender: { name: 'input' } },

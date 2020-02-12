@@ -31,6 +31,11 @@ export default new Vuex.Store({
               { value: '4', label: '绿' },
               { value: '5', label: '青' }
             ],
+            OPERATE_STATUS: [
+              { value: '1', label: '成功' },
+              { value: '2', label: '失败' },
+              { value: '3', label: '拒接' }
+            ],
             SEX_LIST: [
               { value: '0', label: '女' },
               { value: '1', label: '男' }

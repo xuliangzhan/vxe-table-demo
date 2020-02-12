@@ -108,3 +108,21 @@ VXETable.setup({
     }
   }
 })
+
+// 创建一个字典翻译渲染器
+VXETable.renderer.add('DICT', {
+  renderDefault (h, renderOpts, params) {
+    const { props } = renderOpts
+    const { row, column } = params
+    const cellValue = XEUtils.get(row, column.property)
+    const rest = store.getters.ddMap[props.code]
+    const item = rest && rest.find(item => item.value === cellValue)
+    return [
+      h('span', {
+        style: {
+          color: cellValue === '1' ? 'green' : 'red'
+        }
+      }, item ? item.label : '')
+    ]
+  }
+})
