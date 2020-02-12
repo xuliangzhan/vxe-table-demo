@@ -11,8 +11,8 @@ function handleListData (config, callback, defaultCallback) {
   if (config && !XEUtils.isArray(config)) {
     defaultCallback()
     // 如果是字典
-    if (/^\$+/.test(config)) {
-      const key = config.slice(1)
+    if (config.dict) {
+      const key = config.dict
       store.dispatch('loadDataDictionary')
         .catch(e => e)
         .then(() => {
@@ -48,7 +48,7 @@ VXETable.setup({
         const { filters, editRender } = column
         // 处理筛选请求
         handleListData(filters, data => {
-          $grid.setFilter(column, data)
+          $grid.setFilter(column, data || [])
         }, () => {
           column.filters = []
         })

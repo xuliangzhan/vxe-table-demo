@@ -53,9 +53,15 @@ export default {
           sort: true,
           filter: true,
           ajax: {
-            query: '/api/user/page/list/{{page.pageSize}}/{{page.currentPage}}',
-            delete: '/api/user/save',
-            save: '/api/user/save'
+            query: {
+              url: '/api/user/page/list/{{page.pageSize}}/{{page.currentPage}}'
+            },
+            delete: {
+              url: '/api/user/save'
+            },
+            save: {
+              url: '/api/user/save'
+            }
           }
         },
         toolbar: {
@@ -75,9 +81,9 @@ export default {
           { field: 'nickname', title: 'Nickname', remoteSort: true, editRender: { name: 'input' } },
           { field: 'age', title: 'Age', remoteSort: true, editRender: { name: 'input' } },
           { field: 'type', title: 'Type', cellRender: { name: 'DICT', props: { code: 'OPERATE_STATUS' } } },
-          { field: 'status', title: 'Status', editRender: { name: 'select', options: '$COLOR_STATUS' } },
-          { field: 'sex', title: 'Sex', filters: '$SEX_LIST', filterMultiple: false, remoteSort: true, editRender: { name: 'select', options: '/api/conf/sex/list' } },
-          { field: 'role', title: 'Role', width: 200, filters: '/api/conf/role/list', filterMultiple: false, remoteSort: true, editRender: { name: 'input' } },
+          { field: 'status', title: 'Status', editRender: { name: 'select', options: { dict: 'COLOR_STATUS' } } },
+          { field: 'sex', title: 'Sex', filters: { dict: 'SEX_LIST' }, filterMultiple: false, remoteSort: true, editRender: { name: 'select', options: { url: '/api/conf/sex/list' } } },
+          { field: 'role', title: 'Role', width: 200, filters: { url: '/api/conf/role/list' }, filterMultiple: false, remoteSort: true, editRender: { name: 'input' } },
           { field: 'describe', title: 'Describe', showOverflow: true, editRender: { name: 'input' } }
         ]
       }
