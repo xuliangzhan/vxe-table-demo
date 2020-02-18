@@ -40,9 +40,27 @@ VXETable.setup({
      * 任何支持 Promise 的异步请求库都能对接，不同的库可能用法会不一样，基本大同小异（fetch、jquery、axios、xe-ajax）
      * 支持增删改查自动发送请求
      * 支持 filters 自动请求数据
-     * 支持 edit-render 下拉框自动请求数据
+     * 支持 item-render 表单项（select）自动请求数据
+     * 支持 edit-render 可编辑（select）下拉框自动请求数据
      */
     proxyConfig: {
+      // 表单项初始化之前
+      beforeItem ({ item }) {
+        const { itemRender } = item
+        // 处理渲染器请求
+        if (itemRender) {
+          let config = itemRender.options
+          switch (itemRender.name) {
+            case 'select':
+              handleListData(config, data => {
+                itemRender.options = data || []
+              }, () => {
+                itemRender.options = []
+              })
+              break
+          }
+        }
+      },
       // 列初始化之前
       beforeColumn ({ $grid, column }) {
         const { filters, editRender } = column
@@ -123,6 +141,17 @@ VXETable.renderer.add('DICT', {
           color: cellValue === '1' ? 'green' : 'red'
         }
       }, item ? item.label : '')
+    ]
+  }
+})
+
+// 创建一个表单-按钮组渲染器
+VXETable.renderer.add('FormItemButtonGroup', {
+  // 项显示模板
+  renderItem (h, renderOpts, params, context) {
+    return [
+      <vxe-button type="submit" status="primary">查询</vxe-button>,
+      <vxe-button type="reset">重置</vxe-button>
     ]
   }
 })
