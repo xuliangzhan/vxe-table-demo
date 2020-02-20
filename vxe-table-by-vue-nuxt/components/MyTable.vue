@@ -1,14 +1,11 @@
 <template>
   <div>
-    <vxe-table
+    <vxe-grid
       border
       highlight-hover-row
-      :data="tableData">
-      <vxe-table-column type="index" title="Number" width="80"></vxe-table-column>
-      <vxe-table-column field="name" title="Name" sortable></vxe-table-column>
-      <vxe-table-column field="sex" title="Sex" sortable></vxe-table-column>
-      <vxe-table-column field="address" title="Address"></vxe-table-column>
-    </vxe-table>
+      :data="tableData"
+      :columns="tableColumn">
+    </vxe-grid>
   </div>
 </template>
 
@@ -17,6 +14,12 @@ export default {
   name: 'MyTable',
   data () {
     return {
+      tableColumn: [
+        { type: 'seq', title: 'Number', width: 80 },
+        { field: 'name', title: 'Name', sortable: true },
+        { field: 'sex', title: 'Sex', sortable: true },
+        { field: 'address', title: 'Address' }
+      ],
       tableData: [
         {
           id: 10001,

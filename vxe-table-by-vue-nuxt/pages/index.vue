@@ -2,11 +2,8 @@
   <div class="container">
     <div>
       <logo />
-      <h1 class="title">
-        n444
-      </h1>
       <h2 class="subtitle">
-        My breathtaking Nuxt.js project
+        My well-made Nuxt.js project
       </h2>
       <div class="links">
         <a
