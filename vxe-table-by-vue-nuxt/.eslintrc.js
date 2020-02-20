@@ -13,5 +13,8 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    "vue/html-self-closing": "off",
+    "vue/html-closing-bracket-spacing": "off",
+    "vue/html-closing-bracket-newline": "off"
   }
 }

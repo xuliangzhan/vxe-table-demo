@@ -30,7 +30,7 @@ export default {
   */
   plugins: [
     '@/plugins/utils',
-    '@/plugins/table'
+    { src: '@/plugins/table', ssr: true }
   ],
   /*
   ** Nuxt.js dev-modules

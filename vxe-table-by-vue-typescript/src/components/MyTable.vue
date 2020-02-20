@@ -4,7 +4,7 @@
       border
       highlight-hover-row
       :data="tableData">
-      <vxe-table-column type="index" title="Number" width="80"></vxe-table-column>
+      <vxe-table-column type="seq" title="Number" width="80"></vxe-table-column>
       <vxe-table-column field="name" title="Name" sortable></vxe-table-column>
       <vxe-table-column field="sex" title="Sex" sortable></vxe-table-column>
       <vxe-table-column field="address" title="Address"></vxe-table-column>
