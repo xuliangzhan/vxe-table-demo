@@ -4,7 +4,6 @@ import {
   VXETable,
   Icon,
   Header,
-  Body,
   Column,
   Table
 } from 'vxe-table'
@@ -18,7 +17,6 @@ VXETable.setup({
 // 按需导入依赖的模块
 Vue.use(Icon)
 Vue.use(Header)
-Vue.use(Body)
 Vue.use(Column)
 // 最后安装核心库
 Vue.use(Table)

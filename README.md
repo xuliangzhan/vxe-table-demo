@@ -89,7 +89,6 @@ import {
   VXETable,
   Icon,
   Header,
-  Body,
   Column,
   Table
 } from 'vxe-table'
@@ -103,7 +102,6 @@ VXETable.setup({
 // 按需导入依赖的模块
 Vue.use(Icon)
 Vue.use(Header)
-Vue.use(Body)
 Vue.use(Column)
 // 最后安装核心库
 Vue.use(Table)
@@ -160,7 +158,6 @@ import {
   VXETable,
   Icon,
   Header,
-  Body,
   Column,
   Table
 } from 'vxe-table'
@@ -174,7 +171,6 @@ VXETable.setup({
 // 按需导入依赖的模块
 Vue.use(Icon)
 Vue.use(Header)
-Vue.use(Body)
 Vue.use(Column)
 // 最后安装核心库
 Vue.use(Table)
@@ -239,7 +235,6 @@ src/plugins/table.js
 import XEUtils from 'xe-utils/methods/xe-utils'
 import VXETable from 'vxe-table/packages/v-x-e-table'
 import Header from 'vxe-table/packages/header'
-import Body from 'vxe-table/packages/body'
 import Column from 'vxe-table/packages/column'
 import Table from 'vxe-table/packages/table'
 import zhCN from 'vxe-table/lib/locale/lang/zh-CN'
@@ -252,7 +247,6 @@ VXETable.setup({
 // 按需导入依赖的模块
 Vue.use(Column)
 Vue.use(Header)
-Vue.use(Body)
 // 最后安装核心库
 Vue.use(Table)
 ```
