@@ -10,7 +10,7 @@
   "dependencies": {
     "vue": "^2.6.10",
     "vue-router": "^3.0.1",
-    "vxe-table": "^2.8.1",
+    "vxe-table": "^2.8.2",
     "xe-utils": "^2.3.2"
   },
   "devDependencies": {
