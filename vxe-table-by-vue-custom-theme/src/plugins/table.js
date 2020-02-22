@@ -1,5 +1,23 @@
 import Vue from 'vue'
-import VXETable from 'vxe-table'
-import '../assets/table/style.scss'
+import XEUtils from 'xe-utils/methods/xe-utils'
+// 使用按需加载方式
+import {
+  VXETable,
+  Icon,
+  Header,
+  Column,
+  Table
+} from 'vxe-table'
+import zhCN from 'vxe-table/lib/locale/lang/zh-CN'
 
-Vue.use(VXETable)
+// 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
+VXETable.setup({
+  i18n: key => XEUtils.get(zhCN, key)
+})
+
+// 按需导入依赖的模块
+Vue.use(Icon)
+Vue.use(Header)
+Vue.use(Column)
+// 最后安装核心库
+Vue.use(Table)
