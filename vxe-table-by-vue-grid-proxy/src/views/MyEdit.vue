@@ -67,9 +67,9 @@ export default {
         },
         toolbar: {
           buttons: [
-            { code: 'insert_actived', name: 'Add', icon: 'fa fa-plus' },
-            { code: 'mark_cancel', name: 'Mark', icon: 'fa fa-bookmark-o' },
-            { code: 'save', name: 'Save', icon: 'fa fa-save' }
+            { code: 'insert_actived', name: 'Add' },
+            { code: 'mark_cancel', name: 'Mark' },
+            { code: 'save', name: 'Save' }
           ],
           export: true,
           zoom: true,

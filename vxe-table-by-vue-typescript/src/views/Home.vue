@@ -1,18 +1,18 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <MyTable/>
+    <MyTable />
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
-import MyTable from '@/components/MyTable.vue' // @ is an alias to /src
+<script>
+// @ is an alias to /src
+import MyTable from '@/components/MyTable.vue'
 
-@Component({
+export default {
+  name: 'Home',
   components: {
     MyTable
   }
-})
-export default class Home extends Vue {}
+}
 </script>

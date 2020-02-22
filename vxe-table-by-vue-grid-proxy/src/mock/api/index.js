@@ -1,8 +1,13 @@
 import { DELETE, POST, GET } from 'xe-ajax-mock'
 import Helper from './helper'
 
-GET('/api/conf/role/list', require('./conf/role.json'))
-GET('/api/conf/sex/list', require('./conf/sex.json'))
+import roleConf from './conf/role.json'
+import sexConf from './conf/sex.json'
+
+import userList from './user/list.json'
+
+GET('/api/conf/role/list', roleConf)
+GET('/api/conf/sex/list', sexConf)
 
 class UserVO {
   constructor (data) {
@@ -30,10 +35,11 @@ class UserVO {
     this.updateTime = data.updateTime
   }
 }
-const userHelper = new Helper(require('./user/list.json'), UserVO)
+const userHelper = new Helper(userList, UserVO)
 DELETE('/api/user/delete/{id}', userHelper.deleteByPathVariable())
 POST('/api/user/add', userHelper.insertByBody())
 POST('/api/user/update', userHelper.updateByBody())
 POST('/api/user/save', userHelper.saveListByBody())
 GET('/api/user/list', userHelper.findList({ max: 10 }))
+GET('/api/user/full', userHelper.findAllList())
 GET('/api/user/page/list/{pageSize}/{currentPage}', userHelper.findPageList())

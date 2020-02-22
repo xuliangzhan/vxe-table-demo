@@ -3,7 +3,6 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import 'font-awesome/css/font-awesome.css'
 import './plugins/ajax'
 import './plugins/utils'
 import './plugins/table'

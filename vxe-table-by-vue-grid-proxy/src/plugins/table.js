@@ -49,7 +49,7 @@ VXETable.setup({
         const { itemRender } = item
         // 处理渲染器请求
         if (itemRender) {
-          let config = itemRender.options
+          const config = itemRender.options
           switch (itemRender.name) {
             case 'select':
               handleListData(config, data => {
@@ -72,7 +72,7 @@ VXETable.setup({
         })
         // 处理渲染器请求
         if (editRender) {
-          let config = editRender.options
+          const config = editRender.options
           switch (editRender.name) {
             case 'select':
               handleListData(config, data => {

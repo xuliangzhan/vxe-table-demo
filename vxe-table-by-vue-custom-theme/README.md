@@ -1,4 +1,4 @@
-# vxe-table-by-vue-custom-theme
+# vxe-table-by-vue-theme
 
 ## Project setup
 ```
