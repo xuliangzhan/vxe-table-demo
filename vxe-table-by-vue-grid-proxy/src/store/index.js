@@ -39,11 +39,6 @@ export default new Vuex.Store({
             SEX_LIST: [
               { value: '0', label: '女' },
               { value: '1', label: '男' }
-            ],
-            SEX_ALL_LIST: [
-              { value: '', label: '' },
-              { value: '0', label: '女' },
-              { value: '1', label: '男' }
             ]
           }
           setTimeout(resolve, 300)

@@ -237,7 +237,7 @@ import VXETable from 'vxe-table/packages/v-x-e-table'
 import Header from 'vxe-table/packages/header'
 import Column from 'vxe-table/packages/column'
 import Table from 'vxe-table/packages/table'
-import zhCN from 'vxe-table/lib/locale/lang/zh-CN'
+import zhCN from 'vxe-table/packages/locale/lang/zh-CN'
 
 // 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
 VXETable.setup({

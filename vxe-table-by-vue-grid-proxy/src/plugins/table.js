@@ -17,7 +17,7 @@ function handleListData (config, callback, defaultCallback) {
         .catch(e => e)
         .then(() => {
           if (!store.getters.ddMap[key]) {
-            console.error('读取字典配置失败！key=' + key)
+            console.error('读取字典配置失败！code=' + key)
           }
           callback(store.getters.ddMap[key])
         })
@@ -52,6 +52,7 @@ VXETable.setup({
           const config = itemRender.options
           switch (itemRender.name) {
             case 'select':
+            case '$select':
               handleListData(config, data => {
                 itemRender.options = data || []
               }, () => {
@@ -75,6 +76,7 @@ VXETable.setup({
           const config = editRender.options
           switch (editRender.name) {
             case 'select':
+            case '$select':
               handleListData(config, data => {
                 editRender.options = data || []
               }, () => {
@@ -86,15 +88,15 @@ VXETable.setup({
       },
       // 统一处理查询规则
       beforeQuery (params) {
-        const { options, page, sort, filters } = params
+        const { options, page, sort, filters, form } = params
         if (XEUtils.isFunction(options)) {
           return options(params)
         }
         // 处理排序条件
-        const queryParams = {
+        const queryParams = Object.assign({
           sort: sort.property,
           order: sort.order
-        }
+        }, form)
         // 处理筛选条件
         filters.forEach(({ property, values }) => {
           queryParams[property] = values.join(',')

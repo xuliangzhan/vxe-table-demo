@@ -31,7 +31,7 @@ export default {
           { field: 'name', title: 'Name', remoteSort: true },
           { field: 'nickname', title: 'Nickname', remoteSort: true },
           { field: 'age', title: 'Age', remoteSort: true },
-          { field: 'sex', title: 'Sex', editRender: { name: 'select', options: { url: '/api/conf/sex/list' } } },
+          { field: 'sex', title: 'Sex', cellRender: { name: 'DICT', props: { code: 'SEX_LIST' } } },
           { field: 'role', title: 'Role', remoteSort: true, width: 200, filters: { url: '/api/conf/role/list' }, filterMultiple: false },
           { field: 'describe', title: 'Describe', showOverflow: true }
         ]
