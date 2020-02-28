@@ -5,7 +5,7 @@
       highlight-hover-row
       :data="tableData">
       <vxe-table-column type="seq" title="Number" width="80"></vxe-table-column>
-      <vxe-table-column field="name" title="Name" sortable></vxe-table-column>
+      <vxe-table-column field="name" title="Name" sortable :cell-render="{name: 'MyLink'}"></vxe-table-column>
       <vxe-table-column field="sex" title="Sex" sortable></vxe-table-column>
       <vxe-table-column field="address" title="Address"></vxe-table-column>
     </vxe-table>
@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component
 export default class HelloWorld extends Vue {
