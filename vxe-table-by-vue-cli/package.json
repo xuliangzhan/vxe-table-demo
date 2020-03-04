@@ -13,7 +13,7 @@
     "vue-router": "^3.1.5",
     "vuex": "^3.1.2",
     "vxe-table": "^2.8.12",
-    "xe-utils": "^2.3.2"
+    "xe-utils": "^2.3.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",

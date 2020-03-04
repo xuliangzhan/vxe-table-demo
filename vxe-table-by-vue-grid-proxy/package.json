@@ -15,7 +15,7 @@
     "vxe-table": "^2.8.12",
     "xe-ajax": "^4.0.3",
     "xe-ajax-mock": "^1.9.4",
-    "xe-utils": "^2.3.2"
+    "xe-utils": "^2.3.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",
