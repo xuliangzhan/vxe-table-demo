@@ -14,7 +14,7 @@
 如果是 IE 浏览器可以使用 [babel-polyfill](https://www.npmjs.com/package/babel-polyfill) 来解决兼容性问题
 
 require: vue 2.6+  
-require: xe-utils 2.2+
+require: xe-utils 2.4+
 
 ### 1. 全局导入方式，所有版本通用（完整）
 
