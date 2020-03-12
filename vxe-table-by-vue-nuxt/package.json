@@ -13,7 +13,7 @@
   "dependencies": {
     "nuxt": "^2.0.0",
     "vxe-table": "^2.8.21",
-    "xe-utils": "^2.4.0"
+    "xe-utils": "^2.4.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
