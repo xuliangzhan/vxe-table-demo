@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "nuxt": "^2.0.0",
-    "vxe-table": "^2.8.21",
+    "vxe-table": "^2.8.22",
     "xe-utils": "^2.4.1"
   },
   "devDependencies": {
