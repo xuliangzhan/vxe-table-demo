@@ -4,12 +4,12 @@ import VueI18n from 'vue-i18n'
 // 表格组件的语言包
 import tableENUS from 'vxe-table/lib/locale/lang/en-US'
 import tableZHCN from 'vxe-table/lib/locale/lang/zh-CN'
-import tableZHTW from 'vxe-table/lib/locale/lang/zh-TW'
+import tableZHTC from 'vxe-table/lib/locale/lang/zh-TC'
 
 // 项目的语言包
 import myENUS from './lang/en-US'
 import myZHCN from './lang/zh-CN'
-import myZHTW from './lang/zh-TW'
+import myZHTC from './lang/zh-TC'
 
 Vue.use(VueI18n)
 
@@ -24,9 +24,9 @@ const i18n = new VueI18n({
       ...tableZHCN,
       ...myZHCN
     },
-    zh_TW: {
-      ...tableZHTW,
-      ...myZHTW
+    zh_TC: {
+      ...tableZHTC,
+      ...myZHTC
     }
   }
 })

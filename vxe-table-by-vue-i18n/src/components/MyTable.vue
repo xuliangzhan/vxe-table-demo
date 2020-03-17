@@ -1,10 +1,10 @@
 <template>
   <div>
-    <select v-model="$i18n.locale">
-      <option value="zh-CN">简体中文</option>
-      <option value="zh-TW">繁体中文</option>
-      <option value="en">英文</option>
-    </select>
+    <vxe-select v-model="$i18n.locale">
+      <vxe-option value="zh_CN" label="简体中文"></vxe-option>
+      <vxe-option value="zh_TC" label="繁體中文"></vxe-option>
+      <vxe-option value="en_US" label="英文"></vxe-option>
+    </vxe-select>
 
     <vxe-table
       border
@@ -12,6 +12,7 @@
       :data="tableData">
       <vxe-table-column type="seq" title="app.table.title.seq" width="100"></vxe-table-column>
       <vxe-table-column field="name" title="app.table.title.name" sortable></vxe-table-column>
+      <vxe-table-column field="age" title="app.table.title.age" sortable></vxe-table-column>
       <vxe-table-column field="sex" title="app.table.title.sex" sortable></vxe-table-column>
       <vxe-table-column field="address" title="app.table.title.address"></vxe-table-column>
     </vxe-table>
@@ -40,6 +41,7 @@ export default {
           id: 10001,
           name: 'Test1',
           role: 'Developer',
+          age: 18,
           sex: 'Man',
           address: 'Address abc123'
         },
@@ -47,6 +49,7 @@ export default {
           id: 10002,
           name: 'Test2',
           role: 'Developer',
+          age: 30,
           sex: 'Female',
           address: 'Address rttry'
         },
@@ -54,6 +57,7 @@ export default {
           id: 10003,
           name: 'Test3',
           role: 'Developer',
+          age: 22,
           sex: 'Man',
           address: 'Address xxxxx'
         }
