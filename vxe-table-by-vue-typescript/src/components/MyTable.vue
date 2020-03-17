@@ -1,22 +1,39 @@
 <template>
   <div>
+    <vxe-toolbar>
+      <template v-slot:buttons>
+        <vxe-button @click="insertEvent">新增</vxe-button>
+        <vxe-button @click="removeEvent">删除</vxe-button>
+        <vxe-button @click="savsEvent">保存</vxe-button>
+      </template>
+    </vxe-toolbar>
     <vxe-table
       border
       highlight-hover-row
+      keep-source
+      ref="xTable"
+      :edit-config="{trigger: 'click', mode: 'cell', showStatus: true}"
       :data="tableData">
+      <vxe-table-column type="checkbox" width="80"></vxe-table-column>
       <vxe-table-column type="seq" title="Number" width="80"></vxe-table-column>
-      <vxe-table-column field="name" title="Name" sortable :cell-render="{name: 'MyLink'}"></vxe-table-column>
-      <vxe-table-column field="sex" title="Sex" sortable></vxe-table-column>
+      <vxe-table-column field="name" title="Name" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}"></vxe-table-column>
+      <vxe-table-column field="sex" title="Sex" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}"></vxe-table-column>
       <vxe-table-column field="address" title="Address"></vxe-table-column>
     </vxe-table>
   </div>
 </template>
 
 <script lang="ts">
+import XEUtils from 'xe-utils'
+import { Table } from 'vxe-table'
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class HelloWorld extends Vue {
+export default class MyTable extends Vue {
+  $refs!: {
+    xTable: Table;
+  }
+
   data () {
     return {
       tableData: [
@@ -35,7 +52,6 @@ export default class HelloWorld extends Vue {
           address: 'Address rttry'
         },
         {
-          id: 10003,
           name: 'Test3',
           role: 'Developer',
           sex: 'Man',
@@ -43,6 +59,19 @@ export default class HelloWorld extends Vue {
         }
       ]
     }
+  }
+
+  insertEvent () {
+    this.$refs.xTable.insert({ name: `New ${XEUtils.uniqueId()}` })
+  }
+
+  removeEvent () {
+    this.$refs.xTable.removeCheckboxRow()
+  }
+
+  savsEvent () {
+    const { insertRecords, removeRecords, updateRecords } = this.$refs.xTable.getRecordset()
+    this.$XModal.alert(`insertRecords=${insertRecords.length} removeRecords=${removeRecords.length} updateRecords=${updateRecords.length}`)
   }
 }
 </script>

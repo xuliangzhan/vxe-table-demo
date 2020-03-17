@@ -14,7 +14,7 @@
     "vue-property-decorator": "^8.3.0",
     "vue-router": "^3.1.5",
     "vuex": "^3.1.2",
-    "vxe-table": "^2.8.27",
+    "vxe-table": "^2.8.28",
     "xe-utils": "^2.4.1"
   },
   "devDependencies": {
@@ -52,7 +52,10 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {}
+    "rules": {
+      "no-console": "off",
+      "no-debugger": "off"
+    }
   },
   "browserslist": [
     "> 1%",
