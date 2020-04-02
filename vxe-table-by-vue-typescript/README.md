@@ -1,4 +1,4 @@
-# vxe-table-by-vue-ts
+# vxe-table-by-vue-typescript
 
 ## Project setup
 ```
