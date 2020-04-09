@@ -1,12 +1,25 @@
 <template>
-  <div id="app">
+  <div id="app" :class="theme">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <vxe-radio-group v-model="theme">
+        <vxe-radio label="default-theme">默认</vxe-radio>
+        <vxe-radio label="red-theme">红色</vxe-radio>
+        <vxe-radio label="black-theme">黑色</vxe-radio>
+      </vxe-radio-group>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      theme: 'default-theme'
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

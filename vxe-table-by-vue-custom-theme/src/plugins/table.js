@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VXETable, { ModalController } from 'vxe-table'
-import '../assets/table/style.scss'
 
 Vue.use(VXETable)
 

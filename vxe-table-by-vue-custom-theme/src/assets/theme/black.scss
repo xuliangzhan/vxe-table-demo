@@ -1,0 +1,12 @@
+.black-theme {
+  @import 'vxe-table/styles/variable.scss';
+
+  $vxe-font-color: #ffffff;
+  $vxe-primary-color: #35495E;
+  $vxe-table-header-background-color: $vxe-primary-color;
+  $vxe-table-background-color: $vxe-primary-color;
+  $vxe-table-row-hover-background-color: lighten($vxe-primary-color, 6%);
+  $vxe-table-border-color: #727f8e;
+
+  @import 'vxe-table/styles/modules.scss';
+}
