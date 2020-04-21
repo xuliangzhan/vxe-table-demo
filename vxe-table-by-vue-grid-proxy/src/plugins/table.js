@@ -7,6 +7,9 @@ import 'vxe-table/lib/index.css'
 
 Vue.use(VXETable)
 
+// 将模态窗口挂载到 vue 实例中
+// Vue.prototype.$XModal = VXETable.modal
+
 function handleListData (config, callback, defaultCallback) {
   if (config && !XEUtils.isArray(config)) {
     defaultCallback()

@@ -4,6 +4,9 @@ import 'vxe-table/lib/index.css'
 
 Vue.use(VXETable)
 
+// 将模态窗口挂载到 vue 实例中
+// Vue.prototype.$XModal = VXETable.modal
+
 // 创建一个超链接渲染器
 VXETable.renderer.add('MyLink', {
   // 默认显示模板
