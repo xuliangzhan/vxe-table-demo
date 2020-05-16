@@ -1,8 +1,9 @@
 .black-theme {
   @import 'vxe-table/styles/variable.scss';
 
-  $vxe-font-color: #ffffff;
-  $vxe-primary-color: #35495E;
+  $vxe-font-color: #333;
+  $vxe-primary-color: #4a5663;
+  $vxe-table-font-color: #fff;
   $vxe-table-header-background-color: $vxe-primary-color;
   $vxe-table-background-color: $vxe-primary-color;
   $vxe-table-row-hover-background-color: lighten($vxe-primary-color, 6%);
