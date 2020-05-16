@@ -1,14 +1,5 @@
 # vxe-table 使用示例
 
-## 常见报错
-
-### 1. 引用顺序错误导致依赖报错
-
-该问题 vxe-table@2.5 以下版本不受影响，由于 vxe-table@2.5+ 以上版本支持最小化打包的方式  
-所以依赖库 xe-utils 必须要在 vxe-table 之前引用，否则就会报以下错误
-
-![install error](https://github.com/xuliangzhan/vxe-table/blob/master/public/static/error/install.png?raw=true)
-
 ## 安装指南
 
 require: vue 2.6+, xe-utils 2.4+
