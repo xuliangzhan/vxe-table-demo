@@ -1,10 +1,10 @@
 # vxe-table-by-vue-nuxt
 
-> My well-made Nuxt.js project
+> My wicked Nuxt.js project
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install
 

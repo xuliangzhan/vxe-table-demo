@@ -30,14 +30,13 @@ export default {
   */
   plugins: [
     '@/plugins/utils',
-    { src: '@/plugins/table', ssr: true }
+    '@/plugins/table'
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxt/typescript-build'
   ],
   /*
   ** Nuxt.js modules
