@@ -40,11 +40,6 @@ VXETable.setup({
   grid: {
     /**
      * Grid 封装统一的数据代理
-     * 任何支持 Promise 的异步请求库都能对接，不同的库可能用法会不一样，基本大同小异（fetch、jquery、axios、xe-ajax）
-     * 支持增删改查自动发送请求
-     * 支持 filters 自动请求数据
-     * 支持 item-render 表单项（select）自动请求数据
-     * 支持 edit-render 可编辑（select）下拉框自动请求数据
      */
     proxyConfig: {
       // 表单项初始化之前
@@ -55,7 +50,6 @@ VXETable.setup({
           const config = itemRender.options
           switch (itemRender.name) {
             case 'select':
-            case '$select':
               handleListData(config, data => {
                 itemRender.options = data || []
               }, () => {
@@ -79,7 +73,6 @@ VXETable.setup({
           const config = editRender.options
           switch (editRender.name) {
             case 'select':
-            case '$select':
               handleListData(config, data => {
                 editRender.options = data || []
               }, () => {
@@ -137,7 +130,7 @@ VXETable.renderer.add('DICT', {
   renderDefault (h, renderOpts, params) {
     const { props } = renderOpts
     const { row, column } = params
-    const cellValue = XEUtils.get(row, column.property)
+    const cellValue = row[column.property]
     const rest = store.getters.ddMap[props.code]
     const item = rest && rest.find(item => item.value === cellValue)
     return [

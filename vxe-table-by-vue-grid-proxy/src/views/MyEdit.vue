@@ -85,7 +85,7 @@ export default {
             { field: 'role', title: '角色', span: 8, itemRender: { name: 'input', attrs: { placeholder: '请输入角色' } } },
             { field: 'nickname', title: '昵称', span: 8, itemRender: { name: 'input', attrs: { placeholder: '请输入昵称' } } },
             // 表单项渲染，自动读取字典配置
-            { field: 'sex', title: '性别', span: 8, folding: true, itemRender: { name: '$select', options: { dict: 'SEX_LIST' } } },
+            { field: 'sex', title: '性别', span: 8, folding: true, itemRender: { name: 'select', options: { dict: 'SEX_LIST' } } },
             { field: 'age', title: '年龄', span: 8, folding: true, itemRender: { name: 'input', attrs: { type: 'number', placeholder: '请输入年龄' } } },
             { span: 24, align: 'center', collapseNode: true, itemRender: { name: 'FormItemButtonGroup' } }
           ]
@@ -97,8 +97,8 @@ export default {
           { field: 'nickname', title: 'Nickname', remoteSort: true, editRender: { name: 'input' } },
           { field: 'age', title: 'Age', remoteSort: true, editRender: { name: 'input' } },
           { field: 'type', title: 'Type', cellRender: { name: 'DICT', props: { code: 'OPERATE_STATUS' } } },
-          { field: 'status', title: 'Status', editRender: { name: '$select', options: { dict: 'COLOR_STATUS' } } },
-          { field: 'sex', title: 'Sex', filters: { dict: 'SEX_LIST' }, filterMultiple: false, remoteSort: true, editRender: { name: '$select', options: { url: '/api/conf/sex/list' } } },
+          { field: 'status', title: 'Status', editRender: { name: 'select', options: { dict: 'COLOR_STATUS' } } },
+          { field: 'sex', title: 'Sex', filters: { dict: 'SEX_LIST' }, filterMultiple: false, remoteSort: true, editRender: { name: 'select', options: { url: '/api/conf/sex/list' } } },
           { field: 'role', title: 'Role', width: 200, filters: { url: '/api/conf/role/list' }, filterMultiple: false, remoteSort: true, editRender: { name: 'input' } },
           { field: 'describe', title: 'Describe', showOverflow: true, editRender: { name: 'input' } }
         ]
