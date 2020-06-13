@@ -87,7 +87,7 @@ VXETable.setup({
   i18n: key => XEUtils.get(zhCN, key)
 })
 
-// 按需导入依赖的模块
+// 先按需导入依赖的模块
 Vue.use(Icon)
 Vue.use(Header)
 Vue.use(Column)
@@ -156,7 +156,7 @@ VXETable.setup({
   i18n: key => XEUtils.get(zhCN, key)
 })
 
-// 按需导入依赖的模块
+// 先按需导入依赖的模块
 Vue.use(Icon)
 Vue.use(Header)
 Vue.use(Column)
@@ -232,7 +232,7 @@ VXETable.setup({
   i18n: key => XEUtils.get(zhCN, key)
 })
 
-// 按需导入依赖的模块
+// 先按需导入依赖的模块
 Vue.use(Column)
 Vue.use(Header)
 // 最后安装核心库

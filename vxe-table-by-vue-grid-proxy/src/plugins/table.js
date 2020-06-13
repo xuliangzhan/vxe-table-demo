@@ -88,12 +88,10 @@ VXETable.setup({
         if (XEUtils.isFunction(options)) {
           return options(params)
         }
-        // 处理排序条件
         const queryParams = Object.assign({
           sort: sort.property,
           order: sort.order
         }, form)
-        // 处理筛选条件
         filters.forEach(({ property, values }) => {
           queryParams[property] = values.join(',')
         })
