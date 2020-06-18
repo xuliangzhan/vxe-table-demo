@@ -13,8 +13,8 @@
     "vue-i18n": "^8.15.1",
     "vue-router": "^3.1.3",
     "vuex": "^3.1.2",
-    "vxe-table": "^2.9.11",
-    "xe-utils": "^2.4.7"
+    "vxe-table": "^2.9.12",
+    "xe-utils": "^2.4.8"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
