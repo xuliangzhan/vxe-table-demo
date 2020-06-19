@@ -1,4 +1,4 @@
-# vxe-table-by-vue-nuxt
+# vxe-table-by-nuxt
 
 > My wicked Nuxt.js project
 

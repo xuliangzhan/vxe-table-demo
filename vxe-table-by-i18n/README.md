@@ -1,4 +1,4 @@
-# vxe-table-by-vue-i18n
+# vxe-table-by-i18n
 
 ## Project setup
 ```

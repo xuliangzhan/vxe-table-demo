@@ -1,4 +1,4 @@
-# vxe-table-by-vue-grid
+# vxe-table-by-grid
 
 ## Project setup
 ```
