@@ -71,7 +71,7 @@ export default class MyTable extends Vue {
 
   savsEvent () {
     const { insertRecords, removeRecords, updateRecords } = this.$refs.xTable.getRecordset()
-    this.$XModal.alert(`insertRecords=${insertRecords.length} removeRecords=${removeRecords.length} updateRecords=${updateRecords.length}`)
+    alert(`insertRecords=${insertRecords.length} removeRecords=${removeRecords.length} updateRecords=${updateRecords.length}`)
   }
 }
 </script>
