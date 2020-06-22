@@ -29,38 +29,7 @@ import './plugins/utils'
 import './plugins/table'
 ```
 
-### 2. 全局导入方式（完整，体积稍小）
-
-src/plugins/utils.js
-
-```javascript
-import XEUtils from 'xe-utils/methods/xe-utils'
-import dependencies from 'vxe-table/lib/utils/dependencies'
-
-// 按需导入依赖函数库
-XEUtils.mixin(dependencies)
-```
-
-src/plugins/table.js
-
-```javascript
-import Vue from 'vue'
-import XEUtils from 'xe-utils/methods/xe-utils'
-import VXETable from 'vxe-table'
-import dependencies from 'vxe-table/lib/utils/dependencies'
-import 'vxe-table/lib/index.css'
-
-Vue.use(VXETable)
-```
-
-main.js
-
-```javascript
-import './plugins/utils'
-import './plugins/table'
-```
-
-### 3. 按需导入方式（按需，体积最优）
+### 2. 按需导入方式（按需，体积最优）
 
 src/plugins/utils.js
 
@@ -125,23 +94,19 @@ module.exports = {
 }
 ```
 
-### 4. 按需导入方式（按需，体积最优）
+### 3. 按需导入方式（按需，体积最优）
 
 src/plugins/utils.js
 
 ```javascript
-import XEUtils from 'xe-utils/methods/xe-utils'
-import dependencies from 'vxe-table/lib/utils/dependencies'
-
-// 按需导入依赖函数库
-XEUtils.mixin(dependencies)
+import 'xe-utils'
 ```
 
 src/plugins/table.js
 
 ```javascript
 import Vue from 'vue'
-import XEUtils from 'xe-utils/methods/xe-utils'
+import XEUtils from 'xe-utils'
 import {
   VXETable,
   Icon,
@@ -210,17 +175,13 @@ module.exports = {
 src/plugins/utils.js
 
 ```javascript
-import XEUtils from 'xe-utils/methods/xe-utils'
-import dependencies from 'vxe-table/packages/utils/dependencies'
-
-// 按需导入依赖函数库
-XEUtils.mixin(dependencies)
+import 'xe-utils'
 ```
 
 src/plugins/table.js
 
 ```javascript
-import XEUtils from 'xe-utils/methods/xe-utils'
+import XEUtils from 'xe-utils'
 import VXETable from 'vxe-table/packages/v-x-e-table'
 import Header from 'vxe-table/packages/header'
 import Column from 'vxe-table/packages/column'
