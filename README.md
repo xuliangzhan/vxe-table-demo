@@ -94,72 +94,7 @@ module.exports = {
 }
 ```
 
-### 3. 按需导入方式（按需，体积最优）
-
-src/plugins/utils.js
-
-```javascript
-import 'xe-utils'
-```
-
-src/plugins/table.js
-
-```javascript
-import Vue from 'vue'
-import XEUtils from 'xe-utils'
-import {
-  VXETable,
-  Icon,
-  Header,
-  Column,
-  Table
-} from 'vxe-table'
-import zhCN from 'vxe-table/lib/locale/lang/zh-CN'
-
-// 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
-VXETable.setup({
-  i18n: key => XEUtils.get(zhCN, key)
-})
-
-// 先按需导入依赖的模块
-Vue.use(Icon)
-Vue.use(Header)
-Vue.use(Column)
-// 最后安装核心库
-Vue.use(Table)
-```
-
-main.js
-
-```javascript
-import './plugins/utils'
-import './plugins/table'
-```
-
-安装插件，支持按需加载
-
-```javascript
-npm install babel-plugin-import -D
-```
-
-修改 .babelrc 或 babel.config.js 配置文件
-
-```javascript
-module.exports = {
-  // ...,
-  plugins: [
-    [
-      'import',
-      {
-        'libraryName': 'vxe-table',
-        'style': true
-      }
-    ]
-  ]
-}
-```
-
-### 4. 未编译的源码导入方式（按需，体积最小）
+### 3. 未编译的源码导入方式（按需，体积最小）
 
 在 scss 样式文件中引用
 
