@@ -2,7 +2,7 @@
 
 ## 安装指南
 
-require: vue 2.6+, xe-utils 2.4+
+require: vue 2.6+, xe-utils 2.6+
 
 ### 1. 全局导入方式，所有版本通用（完整）
 
