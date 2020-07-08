@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import XEAjax from 'xe-ajax'
+
 export default {
   data () {
     return {
@@ -27,7 +29,7 @@ export default {
           sort: true,
           filter: true,
           ajax: {
-            query: '/api/user/page/list/{{page.pageSize}}/{{page.currentPage}}'
+            query: ({ page }) => XEAjax.get(`/api/user/page/list/${page.pageSize}/${page.currentPage}`)
           }
         },
         columns: [
@@ -49,6 +51,7 @@ export default {
             ],
             filterMultiple: false
           },
+          { field: 'status', title: 'Status', cellRender: { name: 'DICT', props: { code: 'COLOR_STATUS' } } },
           { field: 'describe', title: 'Describe', showOverflow: true }
         ]
       }

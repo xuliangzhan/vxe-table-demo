@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import XEAjax from 'xe-ajax'
+
 export default {
   data () {
     return {
@@ -22,7 +24,7 @@ export default {
           sort: true,
           filter: true,
           ajax: {
-            query: '/api/user/list'
+            query: () => XEAjax.get('/api/user/list')
           }
         },
         columns: [
@@ -32,7 +34,6 @@ export default {
           { field: 'nickname', title: 'Nickname', remoteSort: true },
           { field: 'age', title: 'Age', remoteSort: true },
           { field: 'sex', title: 'Sex', cellRender: { name: 'DICT', props: { code: 'SEX_LIST' } } },
-          { field: 'role', title: 'Role', remoteSort: true, width: 200, filters: { url: '/api/conf/role/list' }, filterMultiple: false },
           { field: 'describe', title: 'Describe', showOverflow: true }
         ]
       }

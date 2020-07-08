@@ -2,8 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">List</router-link> |
-      <router-link to="/page">Page</router-link> |
-      <router-link to="/edit">Edit</router-link>
+      <router-link to="/page">Page</router-link>
     </div>
     <router-view/>
   </div>

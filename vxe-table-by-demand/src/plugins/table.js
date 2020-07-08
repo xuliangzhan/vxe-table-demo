@@ -9,6 +9,9 @@ import {
 } from 'vxe-table'
 import zhCN from 'vxe-table/lib/locale/lang/zh-CN'
 
+// 将模态窗口挂载到 vue 实例中
+// Vue.prototype.$XModal = VXETable.modal
+
 // 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
 VXETable.setup({
   i18n: key => XEUtils.get(zhCN, key)

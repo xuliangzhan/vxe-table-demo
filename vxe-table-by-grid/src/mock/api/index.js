@@ -1,13 +1,7 @@
 import { DELETE, POST, GET } from 'xe-ajax-mock'
 import Helper from './helper'
 
-import roleConf from './conf/role.json'
-import sexConf from './conf/sex.json'
-
 import userList from './user/list.json'
-
-GET('/api/conf/role/list', roleConf)
-GET('/api/conf/sex/list', sexConf)
 
 class UserVO {
   constructor (data) {
