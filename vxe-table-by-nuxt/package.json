@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "nuxt": "^2.0.0",
-    "vxe-table": "^2.9.15",
-    "xe-utils": "^2.7.2"
+    "vxe-table": "^2.9.16",
+    "xe-utils": "^2.7.4"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
