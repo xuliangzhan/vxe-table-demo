@@ -1,7 +1,5 @@
 # vxe-table-by-nuxt
 
-> My wicked Nuxt.js project
-
 ## Build Setup
 
 ```bash
