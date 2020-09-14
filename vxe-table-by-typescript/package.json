@@ -14,7 +14,7 @@
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0",
-    "vxe-table": "^2.9.19",
+    "vxe-table": "^2.9.20",
     "xe-utils": "^2.7.10"
   },
   "devDependencies": {
