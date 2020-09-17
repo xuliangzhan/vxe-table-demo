@@ -37,30 +37,9 @@ export default {
         totalResult: 0
       },
       tableData: [
-        {
-          id: 10001,
-          name: 'Test1',
-          role: 'Developer',
-          age: 18,
-          sex: 'Man',
-          address: 'Address abc123'
-        },
-        {
-          id: 10002,
-          name: 'Test2',
-          role: 'Developer',
-          age: 30,
-          sex: 'Female',
-          address: 'Address rttry'
-        },
-        {
-          id: 10003,
-          name: 'Test3',
-          role: 'Developer',
-          age: 22,
-          sex: 'Man',
-          address: 'Address xxxxx'
-        }
+        { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
+        { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
+        { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
       ]
     }
   }

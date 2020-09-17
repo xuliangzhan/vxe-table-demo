@@ -5,17 +5,12 @@
 </template>
 
 <script>
-import XEAjax from 'xe-ajax'
-
 export default {
   data () {
     return {
       xGridOptions: {
         resizable: true,
         height: 528,
-        filterConfig: {
-          remote: true
-        },
         checkboxConfig: {
           labelField: 'id',
           highlight: true,
@@ -26,35 +21,42 @@ export default {
           pageSizes: [5, 15, 20, 50, 100]
         },
         proxyConfig: {
-          sort: true,
-          filter: true,
           ajax: {
-            query: ({ page }) => XEAjax.get(`/api/user/page/list/${page.pageSize}/${page.currentPage}`)
+            query: ({ page }) => this.findPageList(page.pageSize, page.currentPage)
           }
         },
         columns: [
           { type: 'seq', width: 60, fixed: 'left' },
           { type: 'checkbox', title: 'ID', width: 140, fixed: 'left' },
-          { field: 'name', title: 'Name', remoteSort: true },
-          { field: 'nickname', title: 'Nickname', remoteSort: true },
-          { field: 'age', title: 'Age', remoteSort: true },
-          {
-            field: 'role',
-            title: 'Role',
-            remoteSort: true,
-            width: 200,
-            filters: [
-              { label: '前端开发', value: '前端' },
-              { label: '后端开发', value: '后端' },
-              { label: '测试', value: '测试' },
-              { label: '程序员鼓励师', value: '程序员鼓励师' }
-            ],
-            filterMultiple: false
-          },
+          { field: 'name', title: 'Name' },
+          { field: 'nickname', title: 'Nickname' },
+          { field: 'role', title: 'Role', width: 200 },
+          { field: 'sex', title: 'Sex', cellRender: { name: 'DICT', props: { code: 'SEX_LIST' } } },
           { field: 'status', title: 'Status', cellRender: { name: 'DICT', props: { code: 'COLOR_STATUS' } } },
           { field: 'describe', title: 'Describe', showOverflow: true }
         ]
       }
+    }
+  },
+  methods: {
+    findPageList (pageSize, currentPage) {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const list = [
+            { id: 10001, name: 'Test1', nickname: 'T1', role: '前端', sex: '1', age: 22, status: '1', describe: 'Address abc123' },
+            { id: 10002, name: 'Test2', nickname: 'T2', role: '后端', sex: '0', age: 24, status: '2', describe: 'Address rttry' },
+            { id: 10003, name: 'Test3', nickname: 'T3', role: '测试', sex: '1', age: 26, status: '3', describe: 'Address xxxxx' }
+          ]
+          resolve({
+            page: {
+              pageSize,
+              currentPage,
+              total: 3
+            },
+            result: list
+          })
+        }, 100)
+      })
     }
   }
 }

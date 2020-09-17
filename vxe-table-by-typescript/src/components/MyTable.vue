@@ -37,32 +37,18 @@ export default class MyTable extends Vue {
   data () {
     return {
       tableData: [
-        {
-          id: 10001,
-          name: 'Test1',
-          role: 'Developer',
-          sex: 'Man',
-          address: 'Address abc123'
-        },
-        {
-          id: 10002,
-          name: 'Test2',
-          role: 'Developer',
-          sex: 'Female',
-          address: 'Address rttry'
-        },
-        {
-          name: 'Test3',
-          role: 'Developer',
-          sex: 'Man',
-          address: 'Address xxxxx'
-        }
+        { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
+        { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
+        { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
       ]
     }
   }
 
   insertEvent () {
-    this.$refs.xTable.insert({ name: `New ${XEUtils.uniqueId()}` })
+    const newRecord = {
+      name: `New ${XEUtils.uniqueId()}`
+    }
+    this.$refs.xTable.insert(newRecord)
   }
 
   removeEvent () {
