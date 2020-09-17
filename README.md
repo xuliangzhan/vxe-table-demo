@@ -2,7 +2,7 @@
 
 ## 安装指南
 
-require: vue 2.6+, xe-utils 2.6+
+require: vue 2.6.x, xe-utils 2.7+
 
 ### 1. 全局导入方式，所有版本通用（完整）
 
@@ -17,7 +17,7 @@ src/plugins/table.js
 ```javascript
 import Vue from 'vue'
 import VXETable from 'vxe-table'
-import 'vxe-table/lib/index.css'
+import 'vxe-table/lib/style.css'
 
 Vue.use(VXETable)
 ```

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VXETable from 'vxe-table'
 import i18n from '../i18n'
-import 'vxe-table/lib/index.css'
+import 'vxe-table/lib/style.css'
 
 Vue.use(VXETable)
 

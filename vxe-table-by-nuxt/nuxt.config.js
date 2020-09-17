@@ -29,7 +29,7 @@ export default {
   ** Global CSS
   */
   css: [
-    'vxe-table/lib/index.css'
+    'vxe-table/lib/style.css'
   ],
   /*
   ** Plugins to load before mounting the App
