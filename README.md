@@ -2,7 +2,11 @@
 
 ## 安装指南
 
-require: vue 2.6.x, xe-utils 2.7+
+* 注：
+  * 2.9+ 依赖需要 xe-utils 2.7+
+  * 2.9.22+ 样式路径由 'vxe-table/lib/index.css' 改为 'vxe-table/lib/style.css'
+
+依赖: vue 2.6.x, xe-utils 2.7+
 
 ### 1. 全局导入方式
 
