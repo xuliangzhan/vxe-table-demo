@@ -58,7 +58,10 @@ import zhCN from 'vxe-table/lib/locale/lang/zh-CN'
 
 // 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
 VXETable.setup({
-  i18n: key => XEUtils.get(zhCN, key)
+  // 如果使用 vue-i18n
+  i18n: (key, args) => i18n.t(key, args),
+  // 如果不使用 vue-i18n，则需要自行转义字符串语法: '{xx}'，例如：
+  // i18n: (key, args) => XEUtils.template(i18n.t(key, args), args, { tmplRE: /\{([.\w[\]\s]+)\}/g })
 })
 
 // 先按需导入依赖的模块
