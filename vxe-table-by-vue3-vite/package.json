@@ -1,0 +1,17 @@
+{
+  "name": "vxe-table-by-vue3-vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.0.2",
+    "vxe-table": "^4.0.0-alpha.0",
+    "xe-utils": "^3.0.1"
+  },
+  "devDependencies": {
+    "vite": "^1.0.0-rc.8",
+    "@vue/compiler-sfc": "^3.0.2"
+  }
+}
