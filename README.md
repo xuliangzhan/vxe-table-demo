@@ -2,12 +2,10 @@
 
 ## 安装指南
 
-* 注：
-  * 2.9+ 依赖需要 xe-utils 2.7+
-  * 2.9.22+ 样式路径由 'vxe-table/lib/index.css' 改为 'vxe-table/lib/style.css'
-  * 2.9.24+ 分组列头由 vxe-table-column 改为 vxe-table-colgroup
-
-依赖: vue 2.6.x, xe-utils 2.7+
+v1 依赖: vue 2.6.x, xe-utils 2.7+
+v2 依赖: vue 2.6.x, xe-utils 2.7+
+v3 依赖: vue 2.6.x, xe-utils 3.x
+v4 依赖: vue 3.x, xe-utils 3.x
 
 ### 1. 全局导入方式
 
