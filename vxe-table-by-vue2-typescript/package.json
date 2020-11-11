@@ -14,8 +14,8 @@
     "vue-property-decorator": "^8.4.2",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0",
-    "vxe-table": "^2.9.26",
-    "xe-utils": "^2.8.1"
+    "vxe-table": "^2.9.27",
+    "xe-utils": "^3.0.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
