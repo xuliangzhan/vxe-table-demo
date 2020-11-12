@@ -2,10 +2,10 @@
 
 ## 安装指南
 
-v1 依赖: vue 2.6.x, xe-utils 2.7+
-v2 依赖: vue 2.6.x, xe-utils 2.7+
-v3 依赖: vue 2.6.x, xe-utils 3.x
-v4 依赖: vue 3.x, xe-utils 3.x
+v1 依赖: vue 2.6.x, xe-utils 2.7+  
+v2 依赖: vue 2.6.x, xe-utils 2.7+  
+v3 依赖: vue 2.6.x, xe-utils 3.x  
+v4 依赖: vue 3.x, xe-utils 3.x  
 
 ### 1. 全局导入方式
 
