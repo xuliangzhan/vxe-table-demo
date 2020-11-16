@@ -23,33 +23,46 @@
   </div>
 </template>
 
-<script>
-import { ref } from 'vue'
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
+import { VxeTableInstance } from 'vxe-table'
 
-export default {
-  data () {
-    return {
-      tableData: [
-        { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
-        { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
-        { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
-      ]
-    }
-  },
-  methods: {
-    insertEvent () {
+export default defineComponent({
+  setup () {
+    const tableData = ref([
+      { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
+      { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
+      { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
+    ])
+
+    const xTable = ref({} as VxeTableInstance)
+
+    const insertEvent = () => {
       const newRecord = {
         name: `New ${Date.now()}`
       }
-      this.$refs.xTable.insert(newRecord)
-    },
-    removeEvent () {
-      this.$refs.xTable.removeCheckboxRow()
-    },
-    savsEvent () {
-      const { insertRecords, removeRecords, updateRecords } = this.$refs.xTable.getRecordset()
+      const $table = xTable.value
+      $table.insert(newRecord)
+    }
+
+    const removeEvent = () => {
+      const $table = xTable.value
+      $table.removeCheckboxRow()
+    }
+
+    const savsEvent = () => {
+      const $table = xTable.value
+      const { insertRecords, removeRecords, updateRecords } = $table.getRecordset()
       alert(`insertRecords=${insertRecords.length} removeRecords=${removeRecords.length} updateRecords=${updateRecords.length}`)
     }
+
+    return {
+      xTable,
+      tableData,
+      insertEvent,
+      removeEvent,
+      savsEvent
+    }
   }
-}
+})
 </script>

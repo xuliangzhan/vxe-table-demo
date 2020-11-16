@@ -2,13 +2,14 @@
   <MyTable />
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
 import MyTable from './components/MyTable.vue'
 
-export default {
+export default defineComponent({
   name: 'App',
   components: {
     MyTable
   }
-}
+})
 </script>
