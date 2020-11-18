@@ -2,12 +2,14 @@
 
 ## 安装指南
 
-v1 依赖: vue 2.6.x, xe-utils 2.7+  
-v2 依赖: vue 2.6.x, xe-utils 2.7+  
+v1 依赖: vue 2.6.x, xe-utils 2.8+  
+v2 依赖: vue 2.6.x, xe-utils 2.8+  
 v3 依赖: vue 2.6.x, xe-utils 3.x  
 v4 依赖: vue 3.x, xe-utils 3.x  
 
-### 1. 全局导入方式
+## v2 ~ v3 版本
+
+### 1. 全局导入
 
 src/plugins/utils.js
 
@@ -32,7 +34,7 @@ import './plugins/utils'
 import './plugins/table'
 ```
 
-### 2. 按需导入方式
+### 2. 按需导入
 
 src/plugins/utils.js
 
@@ -98,4 +100,19 @@ module.exports = {
     ]
   ]
 }
+```
+
+## v4 版本
+
+### 1. 全局安装
+
+main.js
+
+```javascript
+import { createApp } = 'vue'
+import 'xe-utils'
+import VXETable from 'vxe-table'
+import 'vxe-table/lib/style.css'
+
+createApp(App).use(VXETable).mount('#app')
 ```
