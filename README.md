@@ -56,11 +56,11 @@ import {
 } from 'vxe-table'
 import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
 
-// 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中），需要转义字符串语法: '{xx}'
+// 按需加载的方式默认是不带国际化的，需要自行导入
 VXETable.setup({
-  // 使用 vue-i18n 解析占位符
+  // 使用 vue-i18n 解析占位符 '{xx}'
   i18n: (key, args) => i18n.t(key, args),
-  // 使用 xe-utils 解析占位符
+  // 使用 xe-utils 解析占位符 '{xx}'
   // i18n: (key, args) => XEUtils.toFormatString(XEUtils.get(zhCNLocat, key), args)
 })
 
