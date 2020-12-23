@@ -54,14 +54,14 @@ import {
   Column,
   Table
 } from 'vxe-table'
-import zhCN from 'vxe-table/lib/locale/lang/zh-CN'
+import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
 
-// 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
+// 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中），需要转义字符串语法: '{xx}'
 VXETable.setup({
-  // 如果使用 vue-i18n
+  // 使用 vue-i18n 解析占位符
   i18n: (key, args) => i18n.t(key, args),
-  // 如果不使用 vue-i18n，则需要自行转义字符串语法: '{xx}'，例如：
-  // i18n: (key, args) => XEUtils.template(i18n.t(key, args), args, { tmplRE: /\{([.\w[\]\s]+)\}/g })
+  // 使用 xe-utils 解析占位符
+  // i18n: (key, args) => XEUtils.toFormatString(XEUtils.get(zhCNLocat, key), args)
 })
 
 // 先按需导入依赖的模块
