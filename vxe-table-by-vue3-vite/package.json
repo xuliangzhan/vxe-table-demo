@@ -1,6 +1,7 @@
 {
   "name": "vxe-table-by-vue3-vite",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build"
