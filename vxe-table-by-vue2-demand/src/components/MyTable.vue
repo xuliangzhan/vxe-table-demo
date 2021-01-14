@@ -18,11 +18,6 @@ export default {
   name: 'MyTable',
   data () {
     return {
-      tablePage: {
-        currentPage: 1,
-        pageSize: 15,
-        totalResult: 0
-      },
       tableData: [
         { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
         { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },

@@ -7,14 +7,11 @@ import {
   Column,
   Table
 } from 'vxe-table'
-import zhCN from 'vxe-table/lib/locale/lang/zh-CN'
-
-// 将模态窗口挂载到 vue 实例中
-// Vue.prototype.$XModal = VXETable.modal
+import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
 
 // 导入默认的国际化（如果项目中使用多语言，则应该导入到 vue-i18n 中）
 VXETable.setup({
-  i18n: key => XEUtils.get(zhCN, key)
+  i18n: (key, args) => XEUtils.toFormatString(XEUtils.get(zhCNLocat, key), args)
 })
 
 // 先按需导入依赖的模块
@@ -23,3 +20,9 @@ Vue.use(Header)
 Vue.use(Column)
 // 最后安装核心库
 Vue.use(Table)
+
+// 给 vue 实例挂载内部对象，例如：
+// Vue.prototype.$XModal = VXETable.modal
+// Vue.prototype.$XPrint = VXETable.print
+// Vue.prototype.$XSaveFile = VXETable.saveFile
+// Vue.prototype.$XReadFile = VXETable.readFile
