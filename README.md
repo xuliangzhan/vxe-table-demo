@@ -3,7 +3,7 @@
 ## 安装指南
 
 v1 依赖: vue 2.6.x, xe-utils 2.8+  
-v2 依赖: vue 2.6.x, xe-utils 2.8+  
+v2 依赖: vue 2.6.x, xe-utils 3.x  
 v3 依赖: vue 2.6.x, xe-utils 3.x  
 v4 依赖: vue 3.x, xe-utils 3.x  
 
@@ -11,27 +11,13 @@ v4 依赖: vue 3.x, xe-utils 3.x
 
 ### 1. 全局导入
 
-src/plugins/utils.js
-
-```javascript
-import 'xe-utils'
-```
-
-src/plugins/table.js
-
 ```javascript
 import Vue from 'vue'
+import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
 
 Vue.use(VXETable)
-```
-
-main.js
-
-```javascript
-import './plugins/utils'
-import './plugins/table'
 ```
 
 ### 2. 按需导入
@@ -81,7 +67,7 @@ import './plugins/table'
 
 安装插件，支持按需加载
 
-```javascript
+```shell
 npm install babel-plugin-import -D
 ```
 
@@ -104,12 +90,12 @@ module.exports = {
 
 ## v4 版本
 
-### 1. 全局安装
+### 1. 安装
 
 main.js
 
 ```javascript
-import { createApp } = 'vue'
+import { createApp } from 'vue'
 import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
