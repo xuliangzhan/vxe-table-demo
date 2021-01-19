@@ -2,10 +2,10 @@
 
 ## 安装指南
 
-v1 依赖: ```npm install vue@2.6 vxe-table@1 xe-utils@2```  
-v2 依赖: ```npm install vue@2.6 vxe-table@2 xe-utils@3```  
-v3 依赖: ```npm install vue@2.6 vxe-table@3 xe-utils@3```  
-v4 依赖: ```npm install vue@next vxe-table@next xe-utils@3```  
+v1 vue 2.6 依赖: ```npm install vxe-table@1 xe-utils@2```  
+v2 vue 2.6 依赖: ```npm install vxe-table@2 xe-utils@3```  
+v3 vue 2.6 依赖: ```npm install vxe-table@3 xe-utils@3```  
+v4 vue next 依赖: ```npm install vxe-table@next xe-utils@3```  
 
 ## v2 ~ v3 版本
 
