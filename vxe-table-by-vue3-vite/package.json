@@ -8,11 +8,11 @@
   },
   "dependencies": {
     "vue": "^3.0.4",
-    "vxe-table": "^4.0.0-beta.11",
+    "vxe-table": "^4.0.0-beta.12",
     "xe-utils": "^3.1.8"
   },
   "devDependencies": {
-    "vite": "^1.0.0-rc.8",
-    "@vue/compiler-sfc": "^3.0.3"
+    "@vue/compiler-sfc": "^3.0.3",
+    "vite": "^1.0.0-rc.8"
   }
 }
