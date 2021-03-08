@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.4",
-    "vue-router": "^4.0.0-0",
-    "vuex": "^4.0.0-0",
-    "vxe-table": "^4.0.0-beta.19",
+    "vue": "^3.0.6",
+    "vue-router": "^4.0.0",
+    "vuex": "^4.0.0",
+    "vxe-table": "^4.0.0",
     "xe-utils": "^3.1.11"
   },
   "devDependencies": {
