@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 
 import './assets/style.scss'
-import './plugins/utils'
+import 'xe-utils'
 import './plugins/table'
 
 Vue.config.productionTip = false

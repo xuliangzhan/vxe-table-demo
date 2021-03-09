@@ -4,15 +4,22 @@ import router from './router'
 import store from './store'
 
 import 'xe-utils'
-import VXETable from 'vxe-table'
-import 'vxe-table/lib/style.css'
+import {
+  Icon,
+  Header,
+  Column,
+  Table
+} from 'vxe-table'
 import './plugins/table'
 
 const app = createApp(App)
 
 app.use(store)
   .use(router)
-  .use(VXETable)
+  .use(Icon)
+  .use(Header)
+  .use(Column)
+  .use(Table)
 
 // 给 vue 实例挂载内部对象，例如：
 // app.config.globalProperties.$XModal = VXETable.modal

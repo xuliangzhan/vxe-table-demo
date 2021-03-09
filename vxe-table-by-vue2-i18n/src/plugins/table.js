@@ -5,8 +5,11 @@ import 'vxe-table/lib/style.css'
 
 Vue.use(VXETable)
 
-// 将模态窗口挂载到 vue 实例中
-// Vue.prototype.$XModal = VXETable.modal
+// 全局默认参数
+VXETable.setup({
+  version: 0,
+  zIndex: 100
+})
 
 VXETable.setup({
   // 集成 vue-i18n
@@ -20,3 +23,6 @@ VXETable.setup({
     return key
   }
 })
+
+// 将模态窗口挂载到 vue 实例中
+// Vue.prototype.$XModal = VXETable.modal

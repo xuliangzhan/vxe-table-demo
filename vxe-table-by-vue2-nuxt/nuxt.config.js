@@ -36,7 +36,6 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '@/plugins/utils',
     '@/plugins/table'
   ],
   /*
