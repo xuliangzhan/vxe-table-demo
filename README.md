@@ -22,12 +22,6 @@ Vue.use(VXETable)
 
 ### 2. 按需导入
 
-src/plugins/utils.js
-
-```javascript
-import 'xe-utils'
-```
-
 src/plugins/table.js
 
 ```javascript
@@ -61,7 +55,7 @@ Vue.use(Table)
 main.js
 
 ```javascript
-import './plugins/utils'
+import 'xe-utils'
 import './plugins/table'
 ```
 
