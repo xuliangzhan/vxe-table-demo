@@ -3,10 +3,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
-import './plugins/table'
+import './plugins/vxe-table'
 
 const app = createApp(App)
 

@@ -3,14 +3,13 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import 'xe-utils'
 import {
   Icon,
   Header,
   Column,
   Table
 } from 'vxe-table'
-import './plugins/table'
+import './plugins/vxe-table'
 
 const app = createApp(App)
 

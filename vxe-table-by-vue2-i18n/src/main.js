@@ -4,8 +4,7 @@ import router from './router'
 import store from './store'
 import i18n from './i18n'
 
-import 'xe-utils'
-import './plugins/table'
+import './plugins/vxe-table'
 
 Vue.config.productionTip = false
 

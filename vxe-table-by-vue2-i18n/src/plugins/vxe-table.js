@@ -11,6 +11,7 @@ VXETable.setup({
   zIndex: 100
 })
 
+// 设置国际化
 VXETable.setup({
   // 集成 vue-i18n
   i18n: (key, args) => i18n.t(key, args),

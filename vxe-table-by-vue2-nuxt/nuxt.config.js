@@ -36,7 +36,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '@/plugins/table'
+    '@/plugins/vxe-table'
   ],
   /*
   ** Auto import components
