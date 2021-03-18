@@ -4,7 +4,7 @@ import './index.css'
 
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
-import './plugins/table'
+import './plugins/vxe-table'
 
 const app = createApp(App)
 
