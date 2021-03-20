@@ -6,8 +6,4 @@ import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
 import './plugins/vxe-table'
 
-const app = createApp(App)
-
-app.use(VXETable)
-
-app.mount('#app')
+createApp(App).use(VXETable).mount('#app')
