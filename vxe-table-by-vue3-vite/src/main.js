@@ -6,8 +6,10 @@ import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
 import './plugins/vxe-table'
 
+import a from 'ant-design-vue'
+
 const app = createApp(App)
 
-app.use(VXETable)
+app.use(VXETable).use(a)
 
 app.mount('#app')

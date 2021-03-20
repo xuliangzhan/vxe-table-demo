@@ -2,9 +2,41 @@ import Vue from 'vue'
 import XEUtils from 'xe-utils'
 import {
   VXETable,
+
   Icon,
+  // Filter,
+  // Menu,
+  // Edit,
+  // Export,
+  // Keyboard,
+  // Validator,
   Header,
+  // Footer,
+
   Column,
+  // Colgroup,
+  // Grid,
+  // Toolbar,
+  // Pager,
+  // Checkbox,
+  // CheckboxGroup,
+  // Radio,
+  // RadioGroup,
+  // RadioButton,
+  // Input,
+  // Textarea,
+  // Button,
+  // Modal,
+  // Tooltip,
+  // Form,
+  // FormItem,
+  // Select,
+  // Optgroup,
+  // Option,
+  // Switch,
+  // List,
+  // Pulldown,
+
   Table
 } from 'vxe-table'
 import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
@@ -20,12 +52,44 @@ VXETable.setup({
   i18n: (key, args) => XEUtils.toFormatString(XEUtils.get(zhCNLocat, key), args)
 })
 
-// 先按需导入依赖的模块
-Vue.use(Icon)
+// 表格功能
 Vue.use(Header)
-Vue.use(Column)
-// 最后安装核心库
-Vue.use(Table)
+  // .use(Footer)
+  .use(Icon)
+  // .use(Filter)
+  // .use(Edit)
+  // .use(Menu)
+  // .use(Export)
+  // .use(Keyboard)
+  // .use(Validator)
+
+  // 可选组件
+  .use(Column)
+  // .use(Colgroup)
+  // .use(Grid)
+  // .use(Toolbar)
+  // .use(Pager)
+  // .use(Checkbox)
+  // .use(CheckboxGroup)
+  // .use(Radio)
+  // .use(RadioGroup)
+  // .use(RadioButton)
+  // .use(Input)
+  // .use(Textarea)
+  // .use(Button)
+  // .use(Modal)
+  // .use(Tooltip)
+  // .use(Form)
+  // .use(FormItem)
+  // .use(Select)
+  // .use(Optgroup)
+  // .use(Option)
+  // .use(Switch)
+  // .use(List)
+  // .use(Pulldown)
+
+  // 安装表格
+  .use(Table)
 
 // 给 vue 实例挂载内部对象，例如：
 // Vue.prototype.$XModal = VXETable.modal
