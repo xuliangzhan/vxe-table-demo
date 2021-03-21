@@ -16,7 +16,7 @@ import {
 
   Column,
   // Colgroup,
-  // Grid,
+  Grid,
   // Tooltip,
   // Toolbar,
   // Pager,
@@ -61,7 +61,7 @@ app.use(router)
   // 可选组件
   .use(Column)
   // .use(Colgroup)
-  // .use(Grid)
+  .use(Grid)
   // .use(Tooltip)
   // .use(Toolbar)
   // .use(Pager)

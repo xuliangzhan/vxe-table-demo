@@ -2,7 +2,6 @@
   <div>
     <vxe-table
       border
-      round
       highlight-hover-row
       :data="tableData">
       <vxe-table-column type="seq" width="80"></vxe-table-column>

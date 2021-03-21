@@ -23,7 +23,7 @@
   </div>
 </template>
 
-<script lang="tsx">
+<script lang="ts">
 import { defineComponent, ref } from 'vue'
 import { VxeTableInstance } from 'vxe-table'
 

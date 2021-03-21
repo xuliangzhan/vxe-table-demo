@@ -12,7 +12,7 @@
     "vue": "^3.0.7",
     "vue-router": "^4.0.0",
     "vuex": "^4.0.0",
-    "vxe-table": "^4.0.4",
+    "vxe-table": "^4.0.5",
     "xe-utils": "^3.1.11"
   },
   "devDependencies": {
