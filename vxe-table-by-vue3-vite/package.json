@@ -9,7 +9,7 @@
   "dependencies": {
     "vue": "^3.0.5",
     "vxe-table": "^4.0.5",
-    "xe-utils": "^3.1.11"
+    "xe-utils": "^3.1.12"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.5",
