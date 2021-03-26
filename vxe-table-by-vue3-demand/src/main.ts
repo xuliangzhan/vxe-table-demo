@@ -22,6 +22,7 @@ import {
   // Pager,
   // Form,
   // FormItem,
+  // FormGather,
   // Checkbox,
   // CheckboxGroup,
   // Radio,
@@ -67,6 +68,7 @@ app.use(router)
   // .use(Pager)
   // .use(Form)
   // .use(FormItem)
+  // .use(FormGather)
   // .use(Checkbox)
   // .use(CheckboxGroup)
   // .use(Radio)
