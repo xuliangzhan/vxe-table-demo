@@ -20,7 +20,30 @@ import 'vxe-table/lib/style.css'
 Vue.use(VXETable)
 ```
 
-### 2. 按需导入
+### 2. babel 按需导入
+
+安装 babel 插件，支持按需加载
+
+```shell
+npm install babel-plugin-import -D
+```
+
+修改 .babelrc 或 babel.config.js 配置文件
+
+```javascript
+module.exports = {
+  // ...,
+  plugins: [
+    [
+      'import',
+      {
+        'libraryName': 'vxe-table',
+        'style': true
+      }
+    ]
+  ]
+}
+```
 
 src/plugins/table.js
 
@@ -57,29 +80,6 @@ main.js
 ```javascript
 import 'xe-utils'
 import './plugins/table'
-```
-
-安装插件，支持按需加载
-
-```shell
-npm install babel-plugin-import -D
-```
-
-修改 .babelrc 或 babel.config.js 配置文件
-
-```javascript
-module.exports = {
-  // ...,
-  plugins: [
-    [
-      'import',
-      {
-        'libraryName': 'vxe-table',
-        'style': true
-      }
-    ]
-  ]
-}
 ```
 
 ## v4 版本

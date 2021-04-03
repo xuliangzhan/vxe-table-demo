@@ -14,11 +14,11 @@
       ref="xTable"
       :edit-config="{trigger: 'click', mode: 'cell', showStatus: true}"
       :data="tableData">
-      <vxe-table-column type="checkbox" width="80"></vxe-table-column>
-      <vxe-table-column type="seq" title="Number" width="80"></vxe-table-column>
-      <vxe-table-column field="name" title="Name" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}"></vxe-table-column>
-      <vxe-table-column field="sex" title="Sex" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}"></vxe-table-column>
-      <vxe-table-column field="address" title="Address"></vxe-table-column>
+      <vxe-column type="checkbox" width="80"></vxe-column>
+      <vxe-column type="seq" title="Number" width="80"></vxe-column>
+      <vxe-column field="name" title="Name" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}"></vxe-column>
+      <vxe-column field="sex" title="Sex" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}"></vxe-column>
+      <vxe-column field="address" title="Address"></vxe-column>
     </vxe-table>
   </div>
 </template>

@@ -1,5 +1,5 @@
 {
-  "name": "vxe-table-by-vue3-vite",
+  "name": "vxe-table-by-vue3-vite-demand",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -16,6 +16,7 @@
     "@vue/compiler-sfc": "^3.0.5",
     "typescript": "^4.1.3",
     "vite": "^2.1.0",
+    "vite-plugin-style-import": "^0.9.1",
     "vue-tsc": "^0.0.8"
   }
 }

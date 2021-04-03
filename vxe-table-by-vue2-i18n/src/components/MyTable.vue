@@ -10,11 +10,11 @@
       border
       highlight-hover-row
       :data="tableData">
-      <vxe-table-column type="seq" title="app.table.title.seq" width="100"></vxe-table-column>
-      <vxe-table-column field="name" title="app.table.title.name" sortable></vxe-table-column>
-      <vxe-table-column field="age" title="app.table.title.age" sortable></vxe-table-column>
-      <vxe-table-column field="sex" title="app.table.title.sex" sortable></vxe-table-column>
-      <vxe-table-column field="address" title="app.table.title.address"></vxe-table-column>
+      <vxe-column type="seq" title="app.table.title.seq" width="100"></vxe-column>
+      <vxe-column field="name" title="app.table.title.name" sortable></vxe-column>
+      <vxe-column field="age" title="app.table.title.age" sortable></vxe-column>
+      <vxe-column field="sex" title="app.table.title.sex" sortable></vxe-column>
+      <vxe-column field="address" title="app.table.title.address"></vxe-column>
     </vxe-table>
 
     <vxe-pager

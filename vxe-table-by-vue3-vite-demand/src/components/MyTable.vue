@@ -1,12 +1,8 @@
 <template>
   <div>
-    <vxe-toolbar>
-      <template v-slot:buttons>
-        <vxe-button @click="insertEvent">新增</vxe-button>
-        <vxe-button @click="removeEvent">删除</vxe-button>
-        <vxe-button @click="savsEvent">保存</vxe-button>
-      </template>
-    </vxe-toolbar>
+    <vxe-button @click="insertEvent">新增</vxe-button>
+    <vxe-button @click="removeEvent">删除</vxe-button>
+    <vxe-button @click="savsEvent">保存</vxe-button>
     <vxe-table
       border
       highlight-hover-row

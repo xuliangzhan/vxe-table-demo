@@ -1,5 +1,5 @@
 {
-  "name": "vxe-table-by-vue3-demand",
+  "name": "vxe-table-by-vue3-typescript-demand",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "vue": "^3.0.7",
     "vue-router": "^4.0.0",
     "vuex": "^4.0.0",
-    "vxe-table": "^4.0.6",
+    "vxe-table": "^4.0.7-beta.6",
     "xe-utils": "^3.1.12"
   },
   "devDependencies": {

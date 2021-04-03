@@ -1,4 +1,4 @@
-# vxe-table-by-vue3-demand
+# vxe-table-by-vue3-typescript-demand
 
 ## Project setup
 ```
