@@ -167,7 +167,6 @@ import {
   Column,
   Table
 } from 'vxe-table'
-import 'vxe-table/lib/style.css'
 import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
 
 // 全局默认参数
@@ -248,8 +247,7 @@ import {
   Column,
   Table
 } from 'vxe-table'
-import 'vxe-table/lib/style.css'
-import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
+import zhCNLocat from 'vxe-table/es/locale/lang/zh-CN'
 
 // 全局默认参数
 VXETable.setup({
