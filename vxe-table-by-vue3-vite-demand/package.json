@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "vue": "^3.0.5",
-    "vxe-table": "^4.0.12",
-    "xe-utils": "^3.1.13"
+    "vxe-table": "^4.0.13",
+    "xe-utils": "^3.1.14"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.5",
