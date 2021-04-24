@@ -15,7 +15,7 @@
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0",
     "vxe-table": "^3.2.19",
-    "xe-utils": "^3.1.14"
+    "xe-utils": "^3.2.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
