@@ -9,7 +9,7 @@
 </template>
 
 <script lang="tsx">
-import { h, defineComponent, reactive } from 'vue'
+import { defineComponent, reactive } from 'vue'
 import { VxeGridProps } from 'vxe-table'
 
 export default defineComponent({
