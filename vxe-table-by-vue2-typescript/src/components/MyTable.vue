@@ -12,9 +12,17 @@
       :data="tableData">
       <vxe-column type="checkbox" width="80"></vxe-column>
       <vxe-column type="seq" title="Number" width="80"></vxe-column>
-      <vxe-column field="name" title="Name" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}"></vxe-column>
-      <vxe-column field="sex" title="Sex" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}"></vxe-column>
-      <vxe-column field="address" title="Address"></vxe-column>
+      <vxe-column field="name" title="Name" sortable :edit-render="{name: '$input', attrs: {type: 'text'}}"></vxe-column>
+      <vxe-column field="sex" title="Sex" sortable :edit-render="{name: '$input', attrs: {type: 'text'}}">
+        <template #default="{ row }">
+          <span style="color: blue">{{ row.sex }}</span>
+        </template>
+      </vxe-column>
+      <vxe-column field="address" title="Address">
+        <template #default="{ row }">
+          <span style="color: red">{{ row.address }}</span>
+        </template>
+      </vxe-column>
     </vxe-table>
   </div>
 </template>

@@ -13,8 +13,16 @@
       :data="tableData">
       <vxe-column type="seq" title="Number" width="80"></vxe-column>
       <vxe-column field="name" title="Name" sortable></vxe-column>
-      <vxe-column field="sex" title="Sex" sortable></vxe-column>
-      <vxe-column field="address" title="Address"></vxe-column>
+      <vxe-column field="sex" title="Sex" sortable>
+        <template #default="{ row }">
+          <span style="color: blue">{{ row.sex }}</span>
+        </template>
+      </vxe-column>
+      <vxe-column field="address" title="Address">
+        <template #default="{ row }">
+          <span style="color: red">{{ row.address }}</span>
+        </template>
+      </vxe-column>
     </vxe-table>
 
     <vxe-pager
