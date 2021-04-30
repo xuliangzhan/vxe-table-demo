@@ -13,6 +13,7 @@
   $vxe-table-background-color: #4a5663;
   $vxe-table-row-hover-background-color: lighten(#333232, 10%);
   $vxe-table-row-checked-background-color: lighten(#333232, 5%);
+  $vxe-table-border-width: 1px;
   $vxe-table-border-color: #37373A;
 
   @import 'vxe-table/styles/modules.scss';
