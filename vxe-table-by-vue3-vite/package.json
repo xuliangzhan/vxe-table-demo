@@ -8,14 +8,14 @@
   },
   "dependencies": {
     "vue": "^3.2.2",
-    "vxe-table": "^4.0.26",
+    "vxe-table": "^4.0.27",
     "xe-utils": "^3.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.4.0",
     "@vitejs/plugin-vue-jsx": "^1.1.7",
     "@vue/compiler-sfc": "^3.2.2",
-    "typescript": "^4.2.4",
+    "typescript": "^4.3.5",
     "vite": "^2.4.4",
     "vue-tsc": "^0.2.2"
   }

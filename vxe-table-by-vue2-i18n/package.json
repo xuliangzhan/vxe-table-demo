@@ -9,11 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.6.6",
-    "vue": "^2.6.12",
+    "vue": "^2.6.14",
     "vue-i18n": "^8.15.1",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0",
-    "vxe-table": "^3.3.9",
+    "vxe-table": "^3.3.11",
     "xe-utils": "^3.3.1"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
     "root": true,
