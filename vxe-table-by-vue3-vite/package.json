@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "vue": "^3.2.21",
-    "vxe-table": "^4.1.2",
+    "vxe-table": "^4.1.3",
     "xe-utils": "^3.4.0"
   },
   "devDependencies": {
