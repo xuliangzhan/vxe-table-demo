@@ -14,7 +14,7 @@
     "@nuxt/typescript-runtime": "^1.0.0",
     "nuxt": "^2.14.12",
     "vxe-table": "^3.4.5",
-    "xe-utils": "^3.5.2"
+    "xe-utils": "^3.5.4"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",
