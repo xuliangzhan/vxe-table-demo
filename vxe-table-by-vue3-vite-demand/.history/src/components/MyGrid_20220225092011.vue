@@ -16,6 +16,7 @@ export default defineComponent({
   setup () {
     const gridOptions = reactive({
       border: true,
+      highlightHoverRow: true,
       rowConfig: {
         isHover: true
       },

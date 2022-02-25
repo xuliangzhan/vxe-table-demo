@@ -16,9 +16,8 @@ export default defineComponent({
   setup () {
     const gridOptions = reactive({
       border: true,
-      rowConfig: {
-        isHover: true
-      },
+      highlightHoverRow: true,
+      row
       columns: [
         { type: 'seq', width: 80 },
         { field: 'name', title: 'Name', sortable: true },

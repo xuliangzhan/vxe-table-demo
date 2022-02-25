@@ -2,7 +2,7 @@
   <div>
     <vxe-table
       border
-      highlight-hover-row
+      :row-config="{isHover: true}"
       :data="tableData">
       <vxe-column type="seq" width="80"></vxe-column>
       <vxe-column field="name" title="Name" sortable></vxe-column>

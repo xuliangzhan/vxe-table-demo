@@ -8,7 +8,7 @@
 
     <vxe-table
       border
-      highlight-hover-row
+      :row-config="{isHover: true}"
       :data="tableData">
       <vxe-column type="seq" title="app.table.title.seq" width="100"></vxe-column>
       <vxe-column field="name" title="app.table.title.name" sortable></vxe-column>

@@ -9,7 +9,7 @@
     <vxe-table
       border
       round
-      highlight-hover-row
+      :row-config="{isHover: true}"
       :data="tableData">
       <vxe-column type="seq" title="Number" width="80"></vxe-column>
       <vxe-column field="name" title="Name" sortable></vxe-column>

@@ -5,9 +5,9 @@
     <vxe-button @click="savsEvent">保存</vxe-button>
     <vxe-table
       border
-      highlight-hover-row
       keep-source
       ref="xTable"
+      :row-config="{isHover: true}"
       :edit-config="{trigger: 'click', mode: 'cell', showStatus: true}"
       :data="tableData">
       <vxe-column type="checkbox" width="80"></vxe-column>

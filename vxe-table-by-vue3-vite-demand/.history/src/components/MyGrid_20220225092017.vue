@@ -49,7 +49,7 @@ export default defineComponent({
         { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
         { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
       ]
-    } as VxeGridProps)
+    })
     return {
       gridOptions
     }

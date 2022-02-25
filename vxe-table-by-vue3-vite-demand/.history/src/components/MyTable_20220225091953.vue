@@ -5,6 +5,7 @@
     <vxe-button @click="savsEvent">保存</vxe-button>
     <vxe-table
       border
+      highlight-hover-row
       keep-source
       ref="xTable"
       :row-config="{isHover: true}"

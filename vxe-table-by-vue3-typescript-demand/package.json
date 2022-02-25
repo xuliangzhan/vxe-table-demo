@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.2.21",
+    "vue": "^3.2.31",
     "vue-router": "^4.0.0",
     "vuex": "^4.0.0",
-    "vxe-table": "^4.1.7",
+    "vxe-table": "^4.2.0",
     "xe-utils": "^3.5.4"
   },
   "devDependencies": {
@@ -24,7 +24,7 @@
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.2.4",
+    "@vue/compiler-sfc": "^3.2.31",
     "@vue/eslint-config-standard": "^5.1.2",
     "@vue/eslint-config-typescript": "^5.0.2",
     "babel-plugin-import": "^1.13.3",

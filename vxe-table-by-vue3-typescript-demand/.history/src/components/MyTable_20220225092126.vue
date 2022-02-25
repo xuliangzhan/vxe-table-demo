@@ -2,7 +2,7 @@
   <div>
     <vxe-table
       border
-      round
+      highlight-hover-row
       :row-config="{isHover: true}"
       :data="tableData">
       <vxe-column type="seq" width="80"></vxe-column>
@@ -21,17 +21,19 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'MyTable',
-  data () {
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
+
+export default defineComponent({
+  setup () {
+    const tableData = ref([
+      { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
+      { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
+      { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
+    ])
     return {
-      tableData: [
-        { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
-        { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
-        { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
-      ]
+      tableData
     }
   }
-}
+})
 </script>
