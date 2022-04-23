@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "vue": "^3.2.31",
-    "vxe-table": "^4.2.0",
+    "vxe-table": "^4.2.3",
     "xe-utils": "^3.5.4"
   },
   "devDependencies": {
@@ -17,7 +17,7 @@
     "@vue/compiler-sfc": "^3.2.31",
     "typescript": "^4.3.5",
     "vite": "^2.4.4",
-    "vite-plugin-style-import": "^1.1.1",
+    "vite-plugin-style-import": "^2.0.0",
     "vue-tsc": "^0.2.2"
   }
 }
