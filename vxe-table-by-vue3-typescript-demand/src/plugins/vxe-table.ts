@@ -2,7 +2,6 @@ import { App } from 'vue'
 import XEUtils from 'xe-utils'
 import {
   VXETable,
-  Header,
   Icon,
   Edit,
   Column,
@@ -27,8 +26,7 @@ VXETable.setup({
 })
 
 export function useTable (app: App) {
-  app.use(Header)
-    .use(Icon)
+  app.use(Icon)
     .use(Edit)
     .use(Column)
     .use(Grid)

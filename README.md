@@ -2,10 +2,8 @@
 
 ## 安装指南
 
-v1 vue 2.6 依赖: ```npm install vxe-table@1 xe-utils@2```  
-v2 vue 2.6 依赖: ```npm install vxe-table@2 xe-utils@3```  
-v3 vue 2.6 依赖: ```npm install vxe-table@3 xe-utils@3```  
-v4 vue next 依赖: ```npm install vxe-table@next xe-utils@3```  
+v3 vue 2.6+ 依赖: ```npm install vxe-table@legacy xe-utils```  
+v4 vue vue3.2+ 依赖: ```npm install vxe-table xe-utils```  
 
 ### v2 ~ v3 全局导入
 
@@ -208,7 +206,7 @@ createApp(App).use(useTable).mount('#app')
 安装 vite 插件，配置插件
 
 ```shell
-npm vite-plugin-style-import -D
+npm vite-plugin-style-import consola -D
 ```
 
 修改 vite.config.ts 配置文件

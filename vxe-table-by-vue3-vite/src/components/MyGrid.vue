@@ -50,8 +50,11 @@ export default defineComponent({
         { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
       ]
     } as VxeGridProps)
-    return {
-      gridOptions
+    // return {
+    //   gridOptions
+    // }
+    return () => {
+      <vxe-grid></vxe-grid>
     }
   }
 })
