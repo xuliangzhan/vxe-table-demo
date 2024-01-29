@@ -1,0 +1,24 @@
+{
+  "name": "vxe-table-by-vue3-vite-demand",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.15",
+    "vxe-table": "^4.5.18",
+    "xe-utils": "^3.5.19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.4.0",
+    "@vitejs/plugin-vue-jsx": "^1.1.7",
+    "@vue/compiler-sfc": "^3.4.15",
+    "consola": "^2.15.3",
+    "typescript": "^4.3.5",
+    "vite": "^2.4.4",
+    "vite-plugin-style-import": "^2.0.0",
+    "vue-tsc": "^0.2.2"
+  }
+}

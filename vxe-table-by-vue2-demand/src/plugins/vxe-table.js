@@ -10,8 +10,6 @@ import {
   // Export,
   // Keyboard,
   // Validator,
-  Header,
-  // Footer,
 
   Column,
   // Colgroup,
@@ -57,9 +55,7 @@ VXETable.setup({
 })
 
 // 表格功能
-Vue.use(Header)
-  // .use(Footer)
-  .use(Icon)
+Vue.use(Icon)
   // .use(Filter)
   // .use(Edit)
   // .use(Menu)

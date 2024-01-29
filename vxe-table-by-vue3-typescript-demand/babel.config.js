@@ -4,10 +4,10 @@ module.exports = {
   ],
   plugins: [
     [
-      "import",
+      'import',
       {
-        "libraryName": "vxe-table",
-        "style": true // 样式是否也按需加载
+        libraryName: 'vxe-table',
+        style: true // 样式是否也按需加载
       }
     ]
   ]

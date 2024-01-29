@@ -2,8 +2,8 @@
 
 ## 安装指南
 
-v3 vue 2.6+ 依赖: ```npm install vxe-table@legacy xe-utils```  
-v4 vue vue3.2+ 依赖: ```npm install vxe-table xe-utils```  
+v3 vue 2.6+ 依赖: ```npm install vxe-table@legacy```  
+v4 vue vue3.2+ 依赖: ```npm install vxe-table@next```  
 
 ### v2 ~ v3 全局导入
 
@@ -11,7 +11,6 @@ src/plugins/vxe-table
 
 ```javascript
 import Vue from 'vue'
-import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
 
@@ -63,7 +62,6 @@ import XEUtils from 'xe-utils'
 import {
   VXETable,
   Icon,
-  Header,
   Column,
   Table
 } from 'vxe-table'
@@ -75,7 +73,6 @@ VXETable.setup({
 })
 
 Vue.use(Icon)
-Vue.use(Header)
 Vue.use(Column)
 Vue.use(Table)
 ```
@@ -99,7 +96,6 @@ src/plugins/vxe-table
 
 ```javascript
 import { App } from 'vue'
-import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
 
@@ -160,7 +156,6 @@ import { App } from 'vue'
 import XEUtils from 'xe-utils'
 import {
   VXETable,
-  Header,
   Icon,
   Column,
   Table
@@ -182,8 +177,7 @@ VXETable.setup({
 })
 
 export function useTable (app: App) {
-  app.use(Header)
-    .use(Icon)
+  app.use(Icon)
     .use(Column)
     .use(Table)
 }
@@ -240,7 +234,6 @@ import { App } from 'vue'
 import XEUtils from 'xe-utils'
 import {
   VXETable,
-  Header,
   Icon,
   Column,
   Table
@@ -262,8 +255,7 @@ VXETable.setup({
 })
 
 export function useTable (app: App) {
-  app.use(Header)
-    .use(Icon)
+  app.use(Icon)
     .use(Column)
     .use(Table)
 }

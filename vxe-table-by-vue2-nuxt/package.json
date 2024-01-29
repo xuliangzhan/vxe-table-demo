@@ -13,8 +13,8 @@
   "dependencies": {
     "@nuxt/typescript-runtime": "^1.0.0",
     "nuxt": "^2.14.12",
-    "vxe-table": "^3.6.3",
-    "xe-utils": "^3.5.6"
+    "vxe-table": "^3.7.8",
+    "xe-utils": "^3.5.19"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",

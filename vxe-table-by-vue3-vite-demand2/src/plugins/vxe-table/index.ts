@@ -2,15 +2,14 @@ import { App } from 'vue'
 import XEUtils from 'xe-utils'
 import {
   VXETable,
-  Icon,
-  Edit,
-  Column,
-  Grid,
-  Button,
-  Table
+  // VxeIcon,
+  // VxeModuleEdit,
+  // VxeColumn,
+  // VxeGrid,
+  // VxeButton,
+  // VxeTable
 } from 'vxe-table'
-import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
-import 'vxe-table/styles/cssvar.scss'
+import zhCNLocat from 'vxe-table/es/locale/lang/zh-CN'
 
 // 全局默认参数
 VXETable.setup({
@@ -27,12 +26,12 @@ VXETable.setup({
 })
 
 export function useTable (app: App) {
-  app.use(Icon)
-    .use(Edit)
-    .use(Column)
-    .use(Grid)
-    .use(Button)
-    .use(Table)
+  // app.use(VxeIcon)
+  //   .use(VxeModuleEdit)
+  //   .use(VxeColumn)
+  //   .use(VxeGrid)
+  //   .use(VxeButton)
+  //   .use(VxeTable)
 
   // 给 vue 实例挂载内部对象，例如：
   // app.config.globalProperties.$XModal = VXETable.modal

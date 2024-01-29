@@ -27,44 +27,46 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import { ref } from 'vue'
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
 import { VxeTableInstance } from 'vxe-table'
 
-interface RowVO {
-  id: number
-  name: string
-  role: string
-  sex: string
-  address: string
-}
+export default defineComponent({
+  setup () {
+    const tableData = ref([
+      { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
+      { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
+      { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
+    ])
 
-const tableData = ref<RowVO[]>([
-  { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
-  { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
-  { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
-])
+    const xTable = ref({} as VxeTableInstance)
 
-const xTable = ref<VxeTableInstance<RowVO>>()
+    const insertEvent = () => {
+      const newRecord = {
+        name: `New ${Date.now()}`
+      }
+      const $table = xTable.value
+      $table.insert(newRecord)
+    }
 
-const insertEvent = () => {
-  const newRecord = {
-    name: `New ${Date.now()}`
+    const removeEvent = () => {
+      const $table = xTable.value
+      $table.removeCheckboxRow()
+    }
+
+    const savsEvent = () => {
+      const $table = xTable.value
+      const { insertRecords, removeRecords, updateRecords } = $table.getRecordset()
+      alert(`insertRecords=${insertRecords.length} removeRecords=${removeRecords.length} updateRecords=${updateRecords.length}`)
+    }
+
+    return {
+      xTable,
+      tableData,
+      insertEvent,
+      removeEvent,
+      savsEvent
+    }
   }
-  const $table = xTable.value
-  $table?.insert(newRecord)
-}
-
-const removeEvent = () => {
-  const $table = xTable.value
-  $table?.removeCheckboxRow()
-}
-
-const savsEvent = () => {
-  const $table = xTable.value
-  if ($table) {
-    const { insertRecords, removeRecords, updateRecords } = $table.getRecordset()
-    alert(`insertRecords=${insertRecords.length} removeRecords=${removeRecords.length} updateRecords=${updateRecords.length}`)
-  }
-}
+})
 </script>

@@ -9,8 +9,7 @@ import {
   Button,
   Table
 } from 'vxe-table'
-import zhCNLocat from 'vxe-table/lib/locale/lang/zh-CN'
-import 'vxe-table/styles/cssvar.scss'
+import zhCNLocat from 'vxe-table/es/locale/lang/zh-CN'
 
 // 全局默认参数
 VXETable.setup({
