@@ -35,7 +35,7 @@ new Vue({
 安装 babel 插件，配置插件
 
 ```shell
-npm install babel-plugin-import -D
+npm install babel-plugin-import@1.13.6 -D
 ```
 
 修改 .babelrc 或 babel.config.js 配置文件
@@ -130,7 +130,7 @@ createApp(App).use(useTable).mount('#app')
 安装 babel 插件，配置插件
 
 ```shell
-npm install babel-plugin-import -D
+npm install babel-plugin-import@1.13.6 -D
 ```
 
 修改 .babelrc 或 babel.config.js 配置文件

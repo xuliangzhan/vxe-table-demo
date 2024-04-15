@@ -7,16 +7,7 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import MyTable from '@/components/MyTable.vue'
 import MyGrid from '@/components/MyGrid.vue'
-
-export default defineComponent({
-  name: 'Home',
-  components: {
-    MyTable,
-    MyGrid
-  }
-})
 </script>

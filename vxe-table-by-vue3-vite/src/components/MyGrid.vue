@@ -1,6 +1,7 @@
 <template>
   <div>
     <vxe-grid v-bind="gridOptions">
+      <!--插槽模板-->
       <template #sexTmpl="{ row }">
         <span style="color: blue">{{ row.sex }}</span>
       </template>
@@ -43,9 +44,7 @@ const gridOptions = reactive<VxeGridProps<RowVO>>({
       slots: {
         // JSX 渲染
         default ({ row }) {
-          return [
-            <span style="color: red">{ row.address }</span>
-          ]
+          return <span style="color: red">{ row.address }</span>
         }
       }
     }

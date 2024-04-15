@@ -1,4 +1,4 @@
-# vxe-table-by-demand
+# vxe-table-by-vue2-demand
 
 ## Project setup
 ```

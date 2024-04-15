@@ -10,7 +10,6 @@
 import MyTable from '@/components/MyTable.vue'
 
 export default {
-  name: 'home',
   components: {
     MyTable
   }

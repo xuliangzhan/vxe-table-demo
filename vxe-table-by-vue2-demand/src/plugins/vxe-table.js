@@ -3,7 +3,6 @@ import XEUtils from 'xe-utils'
 import {
   VXETable,
 
-  Icon,
   // Filter,
   // Menu,
   // Edit,
@@ -11,9 +10,10 @@ import {
   // Keyboard,
   // Validator,
 
+  Icon,
   Column,
   // Colgroup,
-  // Grid,
+  Grid,
   // Toolbar,
   // Pager,
   // Checkbox,
@@ -24,6 +24,7 @@ import {
   // Input,
   // Textarea,
   // Button,
+  // ButtonGroup,
   // Modal,
   // Tooltip,
   // Form,
@@ -56,17 +57,17 @@ VXETable.setup({
 
 // 表格功能
 Vue.use(Icon)
-  // .use(Filter)
-  // .use(Edit)
-  // .use(Menu)
-  // .use(Export)
-  // .use(Keyboard)
-  // .use(Validator)
+// .use(Filter)
+// .use(Edit)
+// .use(Menu)
+// .use(Export)
+// .use(Keyboard)
+// .use(Validator)
 
   // 可选组件
   .use(Column)
   // .use(Colgroup)
-  // .use(Grid)
+  .use(Grid)
   // .use(Toolbar)
   // .use(Pager)
   // .use(Checkbox)
@@ -77,6 +78,7 @@ Vue.use(Icon)
   // .use(Input)
   // .use(Textarea)
   // .use(Button)
+  // .use(ButtonGroup)
   // .use(Modal)
   // .use(Tooltip)
   // .use(Form)
@@ -91,9 +93,3 @@ Vue.use(Icon)
 
   // 安装表格
   .use(Table)
-
-// 给 vue 实例挂载内部对象，例如：
-// Vue.prototype.$XModal = VXETable.modal
-// Vue.prototype.$XPrint = VXETable.print
-// Vue.prototype.$XSaveFile = VXETable.saveFile
-// Vue.prototype.$XReadFile = VXETable.readFile

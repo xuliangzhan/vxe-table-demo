@@ -6,19 +6,21 @@
     <vxe-table
       border
       keep-source
-      ref="xTable"
+      ref="tableRef"
       :row-config="{isHover: true}"
       :edit-config="{trigger: 'click', mode: 'cell', showStatus: true}"
       :data="tableData">
       <vxe-column type="checkbox" width="80"></vxe-column>
       <vxe-column type="seq" title="Number" width="80"></vxe-column>
-      <vxe-column field="name" title="Name" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}"></vxe-column>
-      <vxe-column field="sex" title="Sex" sortable :edit-render="{name: 'input', attrs: {type: 'text'}}">
+      <vxe-column field="name" title="Name" sortable :edit-render="{name: 'input'}"></vxe-column>
+      <vxe-column field="sex" title="Sex" sortable :edit-render="{name: 'input'}">
+        <!--插槽模板-->
         <template #default="{ row }">
           <span style="color: blue">{{ row.sex }}</span>
         </template>
       </vxe-column>
       <vxe-column field="address" title="Address">
+        <!--插槽模板-->
         <template #default="{ row }">
           <span style="color: red">{{ row.address }}</span>
         </template>
@@ -45,23 +47,27 @@ const tableData = ref<RowVO[]>([
   { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
 ])
 
-const xTable = ref<VxeTableInstance<RowVO>>()
+const tableRef = ref<VxeTableInstance<RowVO>>()
 
 const insertEvent = () => {
   const newRecord = {
     name: `New ${Date.now()}`
   }
-  const $table = xTable.value
-  $table?.insert(newRecord)
+  const $table = tableRef.value
+  if ($table) {
+    $table.insert(newRecord)
+  }
 }
 
 const removeEvent = () => {
-  const $table = xTable.value
-  $table?.removeCheckboxRow()
+  const $table = tableRef.value
+  if ($table) {
+    $table.removeCheckboxRow()
+  }
 }
 
 const savsEvent = () => {
-  const $table = xTable.value
+  const $table = tableRef.value
   if ($table) {
     const { insertRecords, removeRecords, updateRecords } = $table.getRecordset()
     alert(`insertRecords=${insertRecords.length} removeRecords=${removeRecords.length} updateRecords=${updateRecords.length}`)
