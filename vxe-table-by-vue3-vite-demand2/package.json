@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "vue": "^3.4.21",
-    "vxe-table": "^4.5.22"
+    "vxe-table": "^4.6.0-beta.5"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "@vxecli/import-unplugin-vue-components": "^1.0.0",
+    "@vxecli/import-unplugin-vue-components": "^1.0.1",
     "sass": "^1.75.0",
     "sass-loader": "^12.0.0",
     "typescript": "^5.2.2",

@@ -3,7 +3,7 @@ import XEUtils from 'xe-utils'
 import {
   VXETable,
 
-  VxeModuleEdit,
+  VxeTableEditModule,
 
   VxeIcon,
   VxeColumn,
@@ -34,7 +34,7 @@ VXETable.config({
 
 export function useTable (app: App) {
   // 模块扩展
-  app.use(VxeModuleEdit)
+  app.use(VxeTableEditModule)
 
   // 安装组件
   app.use(VxeIcon)
