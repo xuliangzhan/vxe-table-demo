@@ -11,9 +11,9 @@ declare module 'vue' {
     MyTable: typeof import('./src/components/MyTable.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    VxeButton: typeof import('vxe-table/es/button/index.js')['Button']
-    VxeColumn: typeof import('vxe-table/es/column/index.js')['Column']
-    VxeGrid: typeof import('vxe-table/es/grid/index.js')['Grid']
-    VxeTable: typeof import('vxe-table/es/table/index.js')['Table']
+    VxeButton: typeof import('vxe-table/es/button/index.js')['VxeButton']
+    VxeColumn: typeof import('vxe-table/es/column/index.js')['VxeColumn']
+    VxeGrid: typeof import('vxe-table/es/grid/index.js')['VxeGrid']
+    VxeTable: typeof import('vxe-table/es/table/index.js')['VxeTable']
   }
 }
