@@ -9,10 +9,19 @@
   </div>
 </template>
 
-<script lang="jsx" setup>
+<script lang="tsx" setup>
 import { reactive } from 'vue'
+import { VxeGridProps } from 'vxe-table'
 
-const gridOptions = reactive({
+interface RowVO {
+  id: number
+  name: string
+  role: string
+  sex: string
+  address: string
+}
+
+const gridOptions = reactive<VxeGridProps<RowVO>>({
   border: true,
   rowConfig: {
     isHover: true

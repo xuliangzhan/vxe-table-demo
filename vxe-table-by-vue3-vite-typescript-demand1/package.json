@@ -1,5 +1,5 @@
 {
-  "name": "vxe-table-by-vue3-vite-demand2",
+  "name": "vxe-table-by-vue3-vite-typescript-demand2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "vue": "^3.4.23",
-    "vxe-table": "^4.6.0"
+    "vxe-table": "^4.6.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

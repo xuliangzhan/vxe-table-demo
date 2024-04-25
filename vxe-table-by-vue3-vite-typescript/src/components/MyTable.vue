@@ -29,16 +29,25 @@
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { ref } from 'vue'
+import { VxeTableInstance } from 'vxe-table'
 
-const tableData = ref([
+interface RowVO {
+  id: number
+  name: string
+  role: string
+  sex: string
+  address: string
+}
+
+const tableData = ref<RowVO[]>([
   { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
   { id: 10002, name: 'Test2', role: 'Developer', sex: 'Female', address: 'Address rttry' },
   { id: 10003, name: 'Test3', role: 'Developer', sex: 'Man', address: 'Address xxxxx' }
 ])
 
-const tableRef = ref()
+const tableRef = ref<VxeTableInstance<RowVO>>()
 
 const insertEvent = () => {
   const newRecord = {
