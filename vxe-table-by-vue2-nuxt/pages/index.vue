@@ -1,20 +1,18 @@
 <template>
   <div class="container">
-    <my-table></my-table>
+    <MyTable />
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-import Logo from '~/components/Logo.vue'
+<script>
 import MyTable from '~/components/MyTable.vue'
 
-export default Vue.extend({
-  components: {
-    Logo,
+export default {
+  name: 'IndexPage',
+  comments: {
     MyTable
   }
-})
+}
 </script>
 
 <style>

@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import './plugins/vxe-table'
+import './plugins'
 
 Vue.config.productionTip = false
 
