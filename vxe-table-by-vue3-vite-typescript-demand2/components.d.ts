@@ -9,9 +9,10 @@ declare module 'vue' {
   export interface GlobalComponents {
     MyGrid: typeof import('./src/components/MyGrid.vue')['default']
     MyTable: typeof import('./src/components/MyTable.vue')['default']
-    VxeButton: typeof import('vxe-table/es/button/index.js')['VxeButton']
+    VxeButton: typeof import('vxe-pc-ui/es/button/index.js')['VxeButton']
     VxeColumn: typeof import('vxe-table/es/column/index.js')['VxeColumn']
     VxeGrid: typeof import('vxe-table/es/grid/index.js')['VxeGrid']
+    VxeIcon: typeof import('vxe-pc-ui/es/icon/index.js')['VxeIcon']
     VxeTable: typeof import('vxe-table/es/table/index.js')['VxeTable']
   }
 }

@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^3.4.23",
+    "vue": "^3.4.27",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0",
-    "vxe-table": "^4.6.7"
+    "vxe-table": "^4.7.0-alpha.10"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",

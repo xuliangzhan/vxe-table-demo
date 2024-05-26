@@ -1,6 +1,6 @@
 const { defineConfig } = require('@vue/cli-service')
 const Components = require('unplugin-vue-components/webpack')
-const VxeTableResolver = require('@vxecli/import-unplugin-vue-components')
+const { VxeResolver } = require('@vxecli/import-unplugin-vue-components')
 
 module.exports = defineConfig({
   transpileDependencies: true,
@@ -8,7 +8,14 @@ module.exports = defineConfig({
     plugins: [
       Components({
         resolvers: [
-          VxeTableResolver()
+          VxeResolver({
+            libraryName: 'vxe-table'
+            // importStyle: true
+          }),
+          VxeResolver({
+            libraryName: 'vxe-pc-ui'
+            // importStyle: true
+          })
         ]
       })
     ]

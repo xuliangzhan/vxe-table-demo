@@ -1,5 +1,5 @@
 {
-  "name": "vxe-table-by-vue2-i18n",
+  "name": "vxe-table-by-vue3-theme",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,11 +10,10 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14",
-    "vue-i18n": "^8.15.1",
-    "vue-router": "^3.5.1",
-    "vuex": "^3.6.2",
-    "vxe-table": "^3.8.4"
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0",
+    "vxe-table": "^4.7.0-alpha.10"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -31,7 +30,6 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.32.7",
-    "sass-loader": "^12.0.0",
-    "vue-template-compiler": "^2.6.14"
+    "sass-loader": "^12.0.0"
   }
 }

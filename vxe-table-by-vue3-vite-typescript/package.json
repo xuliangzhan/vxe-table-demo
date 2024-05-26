@@ -11,8 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.23",
-    "vxe-table": "^4.6.7"
+    "vue": "^3.4.27",
+    "vxe-table": "^4.7.0-alpha.10"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

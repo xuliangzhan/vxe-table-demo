@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^3.4.23",
+    "vue": "^3.4.27",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0",
-    "vxe-table": "^4.6.7"
+    "vxe-table": "^4.7.0-alpha.10"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",
@@ -26,7 +26,7 @@
     "@vue/cli-service": "~5.0.0",
     "@vue/eslint-config-standard": "^6.1.0",
     "@vue/eslint-config-typescript": "^9.1.0",
-    "@vxecli/import-unplugin-vue-components": "^1.0.1",
+    "@vxecli/import-unplugin-vue-components": "^1.0.3",
     "unplugin-auto-import": "^0.16.7",
     "unplugin-vue-components": "^0.26.0",
     "eslint": "^7.32.0",
