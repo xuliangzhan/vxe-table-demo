@@ -6,7 +6,7 @@ import { VxeIcon, VxeButton, VxeInput, VxeLoading } from 'vxe-pc-ui'
 import 'vxe-pc-ui/styles/cssvar.scss'
 
 // Vxe Table 表格组件
-import { VxeTable, VxeColumn, VxeColgroup, VxeGrid } from 'vxe-table'
+import { VxeTable, VxeColumn, VxeColgroup, VxeGrid, VxeToolbar } from 'vxe-table'
 import 'vxe-table/styles/cssvar.scss'
 
 function LazyVxeUI (app) {
@@ -21,6 +21,7 @@ function LazyVxeTable (app) {
   app.use(VxeColumn)
   app.use(VxeColgroup)
   app.use(VxeGrid)
+  app.use(VxeToolbar)
 }
 
 createApp(App).use(LazyVxeTable).use(LazyVxeUI).mount('#app')
