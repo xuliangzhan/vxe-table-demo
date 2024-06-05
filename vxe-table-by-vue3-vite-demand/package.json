@@ -1,5 +1,5 @@
 {
-  "name": "vxe-table-by-vue3-vite-demand1",
+  "name": "vxe-table-by-vue3-vite-demand",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,16 +12,14 @@
   },
   "dependencies": {
     "vue": "^3.4.27",
-    "vxe-table": "^4.7.0"
+    "vxe-table": "^4.7.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
-    "@vxecli/import-vite-plugin-style-import": "^1.0.3",
     "sass": "^1.75.0",
     "sass-loader": "^12.0.0",
-    "consola": "^3.2.3",
-    "vite": "^5.2.10",
-    "vite-plugin-style-import": "^2.0.0"
+    "vite-plugin-lazy-import": "^1.0.4",
+    "vite": "^5.2.10"
   }
 }
