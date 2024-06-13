@@ -4,19 +4,25 @@ import router from './router'
 import store from './store'
 
 // Vxe UI 组件库
-import { VxeIcon, VxeButton, VxeInput, VxeLoading } from 'vxe-pc-ui'
-import 'vxe-pc-ui/styles/cssvar.scss'
+// import { VxeIcon, VxeButton, VxeInput, VxeLoading } from 'vxe-pc-ui'
+// import 'vxe-pc-ui/styles/cssvar.scss'
 
 // Vxe Table 表格组件
-import { VxeTable, VxeColumn, VxeColgroup, VxeGrid, VxeToolbar } from 'vxe-table'
+import {
+  VxeTable,
+  VxeColumn,
+  VxeColgroup,
+  VxeGrid,
+  VxeToolbar
+} from 'vxe-table'
 import 'vxe-table/styles/cssvar.scss'
 
-function LazyVxeUI (app: App) {
-  app.use(VxeIcon)
-  app.use(VxeButton)
-  app.use(VxeInput)
-  app.use(VxeLoading)
-}
+// function LazyVxeUI (app: App) {
+//   app.use(VxeIcon)
+//   app.use(VxeButton)
+//   app.use(VxeInput)
+//   app.use(VxeLoading)
+// }
 
 function LazyVxeTable (app: App) {
   app.use(VxeTable)
@@ -26,4 +32,9 @@ function LazyVxeTable (app: App) {
   app.use(VxeToolbar)
 }
 
-createApp(VueApp).use(router).use(store).use(LazyVxeUI).use(LazyVxeTable).mount('#app')
+createApp(VueApp)
+  .use(router)
+  .use(store)
+  // .use(LazyVxeUI)
+  .use(LazyVxeTable)
+  .mount('#app')
