@@ -27,16 +27,19 @@ import zhCN from 'vxe-pc-ui/lib/language/zh-CN'
 VxeUI.setI18n('zh-CN', zhCN)
 VxeUI.setLanguage('zh-CN')
 
-// 注册组件，由于没有全局安装，所以使用时需要逐个 import
-VxeUI.component(VxeIcon)
-VxeUI.component(VxeButton)
-VxeUI.component(VxeInput)
-VxeUI.component(VxeLoading)
-VxeUI.component(VxeTooltip)
+function lazyVxeUI (app) {
+  app.use(VxeIcon)
+  app.use(VxeButton)
+  app.use(VxeInput)
+  app.use(VxeLoading)
+  app.use(VxeTooltip)
+}
 
-VxeUI.component(VxeTable)
-VxeUI.component(VxeColumn)
-VxeUI.component(VxeColgroup)
-VxeUI.component(VxeGrid)
+function lazyVxeTable (app) {
+  app.use(VxeTable)
+  app.use(VxeColumn)
+  app.use(VxeColgroup)
+  app.use(VxeGrid)
+}
 
-createApp(App).mount('#app')
+createApp(App).use(lazyVxeUI).use(lazyVxeTable).mount('#app')

@@ -1,17 +1,16 @@
 <template>
   <div>
-    <VxeGrid v-bind="gridOptions">
+    <vxe-grid v-bind="gridOptions">
       <!--插槽模板-->
       <template #sexTmpl="{ row }">
         <span style="color: blue">{{ row.sex }}</span>
       </template>
-    </VxeGrid>
+    </vxe-grid>
   </div>
 </template>
 
 <script lang="jsx" setup>
 import { reactive } from 'vue'
-import { VxeGrid } from 'vxe-table'
 
 const gridOptions = reactive({
   border: true,

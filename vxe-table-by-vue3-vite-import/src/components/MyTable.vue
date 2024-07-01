@@ -1,38 +1,36 @@
 <template>
   <div>
-    <VxeButton @click="insertEvent">新增</VxeButton>
-    <VxeButton @click="removeEvent">删除</VxeButton>
-    <VxeButton @click="savsEvent">保存</VxeButton>
-    <VxeTable
+    <vxe-button @click="insertEvent">新增</vxe-button>
+    <vxe-button @click="removeEvent">删除</vxe-button>
+    <vxe-button @click="savsEvent">保存</vxe-button>
+    <vxe-table
       border
       keep-source
       ref="tableRef"
       :row-config="{isHover: true}"
       :edit-config="{trigger: 'click', mode: 'cell', showStatus: true}"
       :data="tableData">
-      <VxeColumn type="checkbox" width="80"></VxeColumn>
-      <VxeColumn type="seq" title="Number" width="80"></VxeColumn>
-      <VxeColumn field="name" title="Name" sortable :edit-render="{name: 'input'}"></VxeColumn>
-      <VxeColumn field="sex" title="Sex" sortable :edit-render="{name: 'input'}">
+      <vxe-column type="checkbox" width="80"></vxe-column>
+      <vxe-column type="seq" title="Number" width="80"></vxe-column>
+      <vxe-column field="name" title="Name" sortable :edit-render="{name: 'input'}"></vxe-column>
+      <vxe-column field="sex" title="Sex" sortable :edit-render="{name: 'input'}">
         <!--插槽模板-->
         <template #default="{ row }">
           <span style="color: blue">{{ row.sex }}</span>
         </template>
-      </VxeColumn>
-      <VxeColumn field="address" title="Address">
+      </vxe-column>
+      <vxe-column field="address" title="Address">
         <!--插槽模板-->
         <template #default="{ row }">
           <span style="color: red">{{ row.address }}</span>
         </template>
-      </VxeColumn>
-    </VxeTable>
+      </vxe-column>
+    </vxe-table>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { VxeTable, VxeColumn } from 'vxe-table'
-import { VxeButton } from 'vxe-pc-ui'
 
 const tableData = ref([
   { id: 10001, name: 'Test1', role: 'Developer', sex: 'Man', address: 'Address abc123' },
