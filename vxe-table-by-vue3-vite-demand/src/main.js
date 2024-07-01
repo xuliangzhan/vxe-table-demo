@@ -1,8 +1,21 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import { VxeUI, VxeIcon, VxeButton, VxeInput, VxeLoading, VxeTooltip } from 'vxe-pc-ui'
-import { VxeTable, VxeColumn, VxeColgroup, VxeGrid } from 'vxe-table'
+import {
+  VxeUI,
+  VxeIcon,
+  VxeButton,
+  VxeInput,
+  VxeLoading,
+  VxeTooltip
+} from 'vxe-pc-ui'
+
+import { 
+  VxeTable,
+  VxeColumn,
+  VxeColgroup,
+  VxeGrid
+} from 'vxe-table'
 
 // 导入主题变量，也可以重写主题变量
 import 'vxe-table/styles/cssvar.scss'
@@ -14,7 +27,7 @@ import zhCN from 'vxe-pc-ui/lib/language/zh-CN'
 VxeUI.setI18n('zh-CN', zhCN)
 VxeUI.setLanguage('zh-CN')
 
-function LazyVxeUI (app) {
+function lazyVxeUI (app) {
   app.use(VxeIcon)
   app.use(VxeButton)
   app.use(VxeInput)
@@ -22,11 +35,11 @@ function LazyVxeUI (app) {
   app.use(VxeTooltip)
 }
 
-function LazyVxeTable (app) {
+function lazyVxeTable (app) {
   app.use(VxeTable)
   app.use(VxeColumn)
   app.use(VxeColgroup)
   app.use(VxeGrid)
 }
 
-createApp(App).use(LazyVxeUI).use(LazyVxeTable).mount('#app')
+createApp(App).use(lazyVxeUI).use(lazyVxeTable).mount('#app')

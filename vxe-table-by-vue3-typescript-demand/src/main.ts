@@ -1,40 +1,47 @@
 import { App, createApp } from 'vue'
-import VueApp from './App.vue'
+import AppView from './App.vue'
 import router from './router'
 import store from './store'
 
-// Vxe UI 组件库
-// import { VxeIcon, VxeButton, VxeInput, VxeLoading } from 'vxe-pc-ui'
-// import 'vxe-pc-ui/styles/cssvar.scss'
-
-// Vxe Table 表格组件
 import {
+  VxeUI,
+  VxeIcon,
+  VxeButton,
+  VxeInput,
+  VxeLoading,
+  VxeTooltip
+} from 'vxe-pc-ui'
+
+import { 
   VxeTable,
   VxeColumn,
   VxeColgroup,
-  VxeGrid,
-  VxeToolbar
+  VxeGrid
 } from 'vxe-table'
+
+// 导入主题变量，也可以重写主题变量
 import 'vxe-table/styles/cssvar.scss'
+import 'vxe-pc-ui/styles/cssvar.scss'
 
-// function LazyVxeUI (app: App) {
-//   app.use(VxeIcon)
-//   app.use(VxeButton)
-//   app.use(VxeInput)
-//   app.use(VxeLoading)
-// }
+// 导入默认的语言
+import zhCN from 'vxe-pc-ui/lib/language/zh-CN'
 
-function LazyVxeTable (app: App) {
+VxeUI.setI18n('zh-CN', zhCN)
+VxeUI.setLanguage('zh-CN')
+
+function lazyVxeUI (app: App) {
+  app.use(VxeIcon)
+  app.use(VxeButton)
+  app.use(VxeInput)
+  app.use(VxeLoading)
+  app.use(VxeTooltip)
+}
+
+function lazyVxeTable (app: App) {
   app.use(VxeTable)
   app.use(VxeColumn)
   app.use(VxeColgroup)
   app.use(VxeGrid)
-  app.use(VxeToolbar)
 }
 
-createApp(VueApp)
-  .use(router)
-  .use(store)
-  // .use(LazyVxeUI)
-  .use(LazyVxeTable)
-  .mount('#app')
+createApp(AppView).use(router).use(store).use(lazyVxeUI).use(lazyVxeTable).mount('#app')
