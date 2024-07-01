@@ -1,16 +1,16 @@
-# vxe-table-by-vue3-vite-typescript-demand2
+# vxe-table-by-vue3-vite-typescript-demand
 
-## 更新
+## Install
 ```
 npm run update
 ```
 
-### 运行
+### Run
 ```
 npm run serve
 ```
 
-### 打包
+### Build
 ```
 npm run build
 ```
