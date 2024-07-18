@@ -1,4 +1,4 @@
-# vxe-table-by-vue3-vite-demand
+# vxe-table-by-vue3-vite-import
 
 ## Install
 ```

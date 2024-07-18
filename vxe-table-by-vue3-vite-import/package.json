@@ -1,5 +1,5 @@
 {
-  "name": "vxe-table-by-vue3-vite-demand",
+  "name": "vxe-table-by-vue3-vite-import",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "vue": "^3.4.27",
-    "vxe-table": "^4.7.40"
+    "vxe-table": "^4.7.54"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
