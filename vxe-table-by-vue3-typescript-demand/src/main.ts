@@ -12,7 +12,7 @@ import {
   VxeTooltip
 } from 'vxe-pc-ui'
 
-import { 
+import {
   VxeTable,
   VxeColumn,
   VxeColgroup,
