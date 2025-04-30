@@ -19,7 +19,7 @@
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",
-    "vxe-table": "~3.12.17"
+    "vxe-table": "~3.15.16"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
