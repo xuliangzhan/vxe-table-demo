@@ -1,8 +1,8 @@
 <template>
   <div>
-    <vxe-button @click="insertEvent">新增</vxe-button>
-    <vxe-button @click="removeEvent">删除</vxe-button>
-    <vxe-button @click="savsEvent">保存</vxe-button>
+    <button @click="insertEvent">新增</button>
+    <button @click="removeEvent">删除</button>
+    <button @click="savsEvent">保存</button>
     <vxe-table
       border
       keep-source

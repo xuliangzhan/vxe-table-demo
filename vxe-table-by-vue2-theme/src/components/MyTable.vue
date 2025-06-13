@@ -2,7 +2,7 @@
   <div>
     <vxe-toolbar>
       <template v-slot:buttons>
-        <vxe-button status="primary">按钮1</vxe-button>
+        <button status="primary">按钮1</button>
       </template>
     </vxe-toolbar>
 

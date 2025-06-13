@@ -2,6 +2,11 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import { useTable } from './plugins/vxe-table'
+import VxeUITable, { VxeUI } from 'vxe-table'
+import 'vxe-table/lib/style.css'
 
-createApp(App).use(store).use(router).use(useTable).mount('#app')
+VxeUI.setConfig({
+  zIndex: 999
+})
+
+createApp(App).use(store).use(router).use(VxeUITable).mount('#app')
