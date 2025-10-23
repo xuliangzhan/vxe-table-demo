@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import i18n from './i18n'
-import VxeUIAll, { VxeUI } from 'vxe-pc-ui'
+import VxeUIBase, { VxeUI } from 'vxe-pc-ui'
 import 'vxe-pc-ui/lib/style.css'
 import VxeUITable from 'vxe-table'
 import 'vxe-table/lib/style.css'
@@ -22,7 +22,7 @@ VxeUI.setConfig({
 
 Vue.config.productionTip = false
 
-Vue.use(VxeUIAll)
+Vue.use(VxeUIBase)
 Vue.use(VxeUITable)
 
 new Vue({
