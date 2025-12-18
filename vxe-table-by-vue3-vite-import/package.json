@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "vue": "^3.4.27",
-    "vxe-pc-ui": "~4.11.9",
+    "vxe-pc-ui": "~4.11.10",
     "vxe-table": "~4.17.31"
   },
   "devDependencies": {
