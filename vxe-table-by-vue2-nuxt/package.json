@@ -19,7 +19,7 @@
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",
-    "vxe-pc-ui": "~3.12.6",
+    "vxe-pc-ui": "~3.12.7",
     "vxe-table": "~3.19.45"
   },
   "devDependencies": {
