@@ -13,7 +13,7 @@
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0",
-    "vxe-pc-ui": "~4.12.9",
+    "vxe-pc-ui": "~4.12.10",
     "vxe-table": "~4.17.45"
   },
   "devDependencies": {
