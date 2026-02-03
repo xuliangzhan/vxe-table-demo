@@ -19,8 +19,8 @@
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10",
-    "vxe-pc-ui": "~3.12.28",
-    "vxe-table": "~3.19.48"
+    "vxe-pc-ui": "~3.12.30",
+    "vxe-table": "~3.19.49"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
