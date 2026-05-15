@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "update": "npm install --legacy-peer-deps",
+    "update": "npm install --legacy-peer-deps --prefer-offline",
     "serve": "npm run dev",
     "dev": "vite",
     "build": "vite build",
