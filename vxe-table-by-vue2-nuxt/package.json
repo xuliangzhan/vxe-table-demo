@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "update": "npm install --legacy-peer-deps --prefer-offline",
+    "update": "npm install --legacy-peer-deps",
     "serve": "npm run dev",
     "dev": "nuxt",
     "build": "nuxt build",
