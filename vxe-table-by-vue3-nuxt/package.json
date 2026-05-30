@@ -1,0 +1,33 @@
+{
+  "name": "vxe-table-by-vue3-nuxt",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "pnpm install --no-frozen-lockfile",
+    "build": "nuxt build",
+    "serve": "npm run dev",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.108",
+    "@iconify-json/simple-icons": "^1.2.83",
+    "@nuxt/ui": "^4.7.1",
+    "nuxt": "^4.4.6",
+    "tailwindcss": "^4.3.0",
+    "vxe-pc-ui": "~4.14.25",
+    "vxe-table": "~4.19.4"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.15.2",
+    "eslint": "^10.4.0",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.0",
+    "vxe-pc-ui-nuxt": "^0.1.1",
+    "vxe-table-nuxt": "^0.1.1"
+  },
+  "packageManager": "pnpm@11.1.3"
+}
