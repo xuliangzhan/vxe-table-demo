@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "vue": "^3.4.27",
-    "vxe-pc-ui": "~4.14.30",
-    "vxe-table": "~4.19.7"
+    "vxe-pc-ui": "~4.14.31",
+    "vxe-table": "~4.19.8"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
