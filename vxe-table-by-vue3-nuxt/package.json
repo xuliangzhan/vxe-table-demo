@@ -16,7 +16,7 @@
     "@iconify-json/lucide": "^1.2.108",
     "@iconify-json/simple-icons": "^1.2.83",
     "@nuxt/ui": "^4.7.1",
-    "nuxt": "^4.4.6",
+    "nuxt": "^4.4.7",
     "tailwindcss": "^4.3.0",
     "vxe-pc-ui": "~4.14.32",
     "vxe-table": "~4.19.9"
