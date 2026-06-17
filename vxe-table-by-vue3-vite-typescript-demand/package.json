@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "vue": "^3.4.27",
-    "vxe-pc-ui": "~4.15.0",
-    "vxe-table": "~4.19.14"
+    "vxe-pc-ui": "~4.15.1",
+    "vxe-table": "~4.19.15"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
@@ -21,7 +21,7 @@
     "sass": "^1.75.0",
     "sass-loader": "^12.0.0",
     "typescript": "^5.2.2",
-    "vite": "^5.2.10",
+    "vite": "^7.3.5",
     "vite-plugin-lazy-import": "^1.0.6",
     "vue-tsc": "^2.0.13"
   }
