@@ -16,13 +16,13 @@
     "@iconify-json/lucide": "^1.2.108",
     "@iconify-json/simple-icons": "^1.2.83",
     "@nuxt/ui": "^4.7.1",
-    "nuxt": "^4.4.9",
+    "nuxt": "^4.4.10",
     "tailwindcss": "^4.3.0",
-    "vxe-pc-ui": "~4.15.3",
-    "vxe-table": "~4.19.16"
+    "vxe-pc-ui": "~4.15.4",
+    "vxe-table": "~4.19.17"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.15.3",
+    "@nuxt/eslint": "^1.15.4",
     "eslint": "^10.4.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.0",
