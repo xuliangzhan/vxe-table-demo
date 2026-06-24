@@ -12,9 +12,6 @@ export default defineConfig({
       resolvers: [
         VxeResolver({
           libraryName: 'vxe-table'
-        }),
-        VxeResolver({
-          libraryName: 'vxe-pc-ui'
         })
       ]
     })
