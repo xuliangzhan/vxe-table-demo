@@ -18,11 +18,11 @@
     "@nuxt/ui": "^4.7.1",
     "nuxt": "^4.5.0",
     "tailwindcss": "^4.3.0",
-    "vxe-pc-ui": "~4.15.15",
+    "vxe-pc-ui": "~4.15.16",
     "vxe-table": "~4.19.21"
   },
   "devDependencies": {
-    "@nuxt/eslint": "^1.15.15",
+    "@nuxt/eslint": "^1.15.16",
     "eslint": "^10.4.0",
     "typescript": "^6.0.3",
     "vue-tsc": "^3.3.0",
