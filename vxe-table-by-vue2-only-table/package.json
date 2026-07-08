@@ -1,20 +1,20 @@
 {
-  "name": "vxe-table-by-vue3",
+  "name": "vxe-table-by-vue2-only-table",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "update": "npm install --legacy-peer-deps",
+    "update": "pnpm install",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@vxe-ui/core": "^4.4.16",
+    "@vxe-ui/core": "^3.4.16",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13",
-    "vue-router": "^4.0.3",
-    "vuex": "^4.0.0",
-    "vxe-table": "~4.20.0"
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "vxe-table": "~3.22.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -31,6 +31,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.32.7",
-    "sass-loader": "^12.0.0"
+    "sass-loader": "^12.0.0",
+    "vue-template-compiler": "^2.6.14"
   }
 }
