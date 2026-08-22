@@ -19,7 +19,7 @@
     "nuxt": "^4.5.0",
     "tailwindcss": "^4.3.0",
     "vxe-pc-ui": "~4.17.13",
-    "vxe-table": "~4.20.12"
+    "vxe-table": "~4.20.13"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.16.0",
