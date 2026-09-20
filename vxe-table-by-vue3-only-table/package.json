@@ -1,5 +1,5 @@
 {
-  "name": "vxe-table-by-vue3",
+  "name": "vxe-table-by-vue3-only-table",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@vxe-ui/core": "^4.4.16",
+    "@vxe-ui/core": "~4.4.22",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
