@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@vxe-ui/core':
-        specifier: ~4.4.22
-        version: 4.4.22(vue@3.5.39)
+        specifier: ~4.4.38
+        version: 4.4.38(vue@3.5.39)
       core-js:
         specifier: ^3.8.3
         version: 3.49.0
@@ -24,8 +24,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.0(vue@3.5.39)
       vxe-table:
-        specifier: ~4.21.10
-        version: 4.21.10
+        specifier: ~4.23.2
+        version: 4.23.2
     devDependencies:
       '@babel/core':
         specifier: ^7.12.16
@@ -1077,8 +1077,8 @@ packages:
   '@vue/web-component-wrapper@1.3.0':
     resolution: {integrity: sha512-Iu8Tbg3f+emIIMmI2ycSI8QcEuAUgPTgHwesDU1eKMLE4YC/c/sFbGc70QgMq31ijRftV0R7vCm9co6rldCeOA==}
 
-  '@vxe-ui/core@4.4.22':
-    resolution: {integrity: sha512-fxF0QIh15b1G8uVUDgh8Au5QgJ3qR02RAqUyJl8BStoTHM9/1dA2qo3vwwZfnxe04hB4HYIDH1jc/8NsQvX0og==}
+  '@vxe-ui/core@4.4.38':
+    resolution: {integrity: sha512-VtZw4FrhZxKnkuok0ad0/6p3cMPts2u3EsWnk/GpJ6IXZj+CAXCWR6JEVz3qHdTM4bMXCnj9Elp9/kotyQMooQ==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -2832,8 +2832,8 @@ packages:
   launch-editor-middleware@2.14.1:
     resolution: {integrity: sha512-Y8rM8ujxag67bXKCML5RLK5neOwj9rcgYlhgPAG0roa3sM6gjBjq7Bl/mE63XcdAmjMMsPtJhd1ry8+wstwQew==}
 
-  launch-editor@2.14.1:
-    resolution: {integrity: sha512-QWBrQsMpH7gPr965dsKD/3cKWiNoTjpATQf++Xq63N6sKRGMwlVXz41O1IZTMfZQgBctD/K5Zt06+/I6pP6+HA==}
+  launch-editor@2.14.2:
+    resolution: {integrity: sha512-NHJEb30MGBCkmZXLZwz25t37QR4aY03ZzPYUJXOJaOa92uWwExI9SBQUuIznBYc1xkD7cJNGX7oc3Nl3sq2kQQ==}
 
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
@@ -3823,8 +3823,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shell-quote@1.9.0:
-    resolution: {integrity: sha512-Iov+JwFv/2HcTpcwNMKd8+IWNb8tboQJNQTkAY/LLVK7gGH9jy+LGkVqPxfekHl+yMmiqXszdGWXgkfml7hjqA==}
+  shell-quote@1.12.0:
+    resolution: {integrity: sha512-PcByqNyT/38F2kDNi006HAMRJaULuBzq/FOsw3qdZvX/GA9W/jamDaRskgHjubHiftXK5sIFxLNkvrXUwcof6Q==}
     engines: {node: '>= 0.4'}
 
   side-channel-list@1.0.1:
@@ -4266,8 +4266,8 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
-  vxe-table@4.21.10:
-    resolution: {integrity: sha512-9O4Yi/gbafmW/x8qrhG8ZTCUrgGYFK6w3draMH+nsxkKjQhlhYgFvFmcJKOfL6+7VuDvMdQp8JXPi38MxdSb5Q==}
+  vxe-table@4.23.2:
+    resolution: {integrity: sha512-Z7P3jqd4aK9097StBzeb+PNMP5rFiYj/KDBYZBAeZ2WJVyjV7oMdi5sPMqpcXahRakWtmzWE/zMTkbd5j2wUlA==}
 
   watchpack@2.5.2:
     resolution: {integrity: sha512-6i/00NBjP4yGPs+caKSyRfpTF/8Torsu0MOW3mMzIbhgISFder8i7xbqgHlLMwJrdiN8ndBV3UA1/AfzPSr+jg==}
@@ -4413,8 +4413,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xe-utils@4.0.14:
-    resolution: {integrity: sha512-mz3wd+bLwopmJym8/jxDwpuDqAGU6/ygwzc0pCbKz3Wyy9tKpIxTO3lk7ZkwCJgPVb7NYRX6H9qrpSkktGp6fA==}
+  xe-utils@4.1.3:
+    resolution: {integrity: sha512-Ki2lJGLaLu5TzgJPEePxen5Apf/FB8k9/evDdvOiuiALB+jG2JDciOfNfRmkMNZUkS5AlrRGsHgQrQUJiWCN+w==}
 
   y18n@5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
@@ -5777,7 +5777,7 @@ snapshots:
       chalk: 4.1.2
       execa: 1.0.0
       joi: 17.13.4
-      launch-editor: 2.14.1
+      launch-editor: 2.14.2
       lru-cache: 6.0.0
       node-fetch: 2.7.0
       open: 8.4.2
@@ -5929,11 +5929,11 @@ snapshots:
 
   '@vue/web-component-wrapper@1.3.0': {}
 
-  '@vxe-ui/core@4.4.22(vue@3.5.39)':
+  '@vxe-ui/core@4.4.38(vue@3.5.39)':
     dependencies:
       dom-zindex: 1.0.7
       vue: 3.5.39
-      xe-utils: 4.0.14
+      xe-utils: 4.1.3
 
   '@webassemblyjs/ast@1.14.1':
     dependencies:
@@ -7759,12 +7759,12 @@ snapshots:
 
   launch-editor-middleware@2.14.1:
     dependencies:
-      launch-editor: 2.14.1
+      launch-editor: 2.14.2
 
-  launch-editor@2.14.1:
+  launch-editor@2.14.2:
     dependencies:
       picocolors: 1.1.1
-      shell-quote: 1.9.0
+      shell-quote: 1.12.0
 
   levn@0.4.1:
     dependencies:
@@ -8731,7 +8731,7 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shell-quote@1.9.0: {}
+  shell-quote@1.12.0: {}
 
   side-channel-list@1.0.1:
     dependencies:
@@ -9228,7 +9228,7 @@ snapshots:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.39
 
-  vxe-table@4.21.10: {}
+  vxe-table@4.23.2: {}
 
   watchpack@2.5.2:
     dependencies:
@@ -9297,7 +9297,7 @@ snapshots:
       html-entities: 2.6.0
       http-proxy-middleware: 2.0.10(@types/express@4.17.25)(debug@4.4.3(supports-color@8.1.1))
       ipaddr.js: 2.4.0
-      launch-editor: 2.14.1
+      launch-editor: 2.14.2
       open: 8.4.2
       p-retry: 4.6.2
       rimraf: 3.0.2
@@ -9449,7 +9449,7 @@ snapshots:
 
   ws@8.21.0: {}
 
-  xe-utils@4.0.14: {}
+  xe-utils@4.1.3: {}
 
   y18n@5.0.8: {}
 
