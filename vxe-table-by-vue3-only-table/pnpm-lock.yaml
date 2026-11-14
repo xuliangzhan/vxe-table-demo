@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@vxe-ui/core':
-        specifier: ~4.4.22
-        version: 4.4.22(vue@3.5.39)
+        specifier: ~4.4.27
+        version: 4.4.27(vue@3.5.39)
       core-js:
         specifier: ^3.8.3
         version: 3.49.0
@@ -24,8 +24,8 @@ importers:
         specifier: ^4.0.0
         version: 4.1.0(vue@3.5.39)
       vxe-table:
-        specifier: ~4.21.10
-        version: 4.21.10
+        specifier: ~4.22.3
+        version: 4.22.3
     devDependencies:
       '@babel/core':
         specifier: ^7.12.16
@@ -1077,8 +1077,8 @@ packages:
   '@vue/web-component-wrapper@1.3.0':
     resolution: {integrity: sha512-Iu8Tbg3f+emIIMmI2ycSI8QcEuAUgPTgHwesDU1eKMLE4YC/c/sFbGc70QgMq31ijRftV0R7vCm9co6rldCeOA==}
 
-  '@vxe-ui/core@4.4.22':
-    resolution: {integrity: sha512-fxF0QIh15b1G8uVUDgh8Au5QgJ3qR02RAqUyJl8BStoTHM9/1dA2qo3vwwZfnxe04hB4HYIDH1jc/8NsQvX0og==}
+  '@vxe-ui/core@4.4.27':
+    resolution: {integrity: sha512-fO544ZOfzrnDD/KP94MUEELnfrAEPtpreayBuWlPu6rfE1YvrSbOspJn6IQUUzLGNo4ZlsazJCGJhN8UYNwvUA==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -3823,8 +3823,8 @@ packages:
     resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
     engines: {node: '>=8'}
 
-  shell-quote@1.9.0:
-    resolution: {integrity: sha512-Iov+JwFv/2HcTpcwNMKd8+IWNb8tboQJNQTkAY/LLVK7gGH9jy+LGkVqPxfekHl+yMmiqXszdGWXgkfml7hjqA==}
+  shell-quote@1.12.0:
+    resolution: {integrity: sha512-PcByqNyT/38F2kDNi006HAMRJaULuBzq/FOsw3qdZvX/GA9W/jamDaRskgHjubHiftXK5sIFxLNkvrXUwcof6Q==}
     engines: {node: '>= 0.4'}
 
   side-channel-list@1.0.1:
@@ -4266,8 +4266,8 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
-  vxe-table@4.21.10:
-    resolution: {integrity: sha512-9O4Yi/gbafmW/x8qrhG8ZTCUrgGYFK6w3draMH+nsxkKjQhlhYgFvFmcJKOfL6+7VuDvMdQp8JXPi38MxdSb5Q==}
+  vxe-table@4.22.3:
+    resolution: {integrity: sha512-7px+ZS6YvIwmZqNfp9TT+PRaiOliTnwktWFeFb+iqWRNEofo83pk0LDErgWweeAv6AlfJBnmj+OpISg7LWMfrw==}
 
   watchpack@2.5.2:
     resolution: {integrity: sha512-6i/00NBjP4yGPs+caKSyRfpTF/8Torsu0MOW3mMzIbhgISFder8i7xbqgHlLMwJrdiN8ndBV3UA1/AfzPSr+jg==}
@@ -4413,8 +4413,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  xe-utils@4.0.14:
-    resolution: {integrity: sha512-mz3wd+bLwopmJym8/jxDwpuDqAGU6/ygwzc0pCbKz3Wyy9tKpIxTO3lk7ZkwCJgPVb7NYRX6H9qrpSkktGp6fA==}
+  xe-utils@4.1.2:
+    resolution: {integrity: sha512-/5ti5uyFYh+wSJZeQLgyYUFvINCjI0ltayqWHFqHFh9STdSTRHn8wfiwpsXCS0biLDP7hSt6He8WDh7So1G0Jg==}
 
   y18n@5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}
@@ -5929,11 +5929,11 @@ snapshots:
 
   '@vue/web-component-wrapper@1.3.0': {}
 
-  '@vxe-ui/core@4.4.22(vue@3.5.39)':
+  '@vxe-ui/core@4.4.27(vue@3.5.39)':
     dependencies:
       dom-zindex: 1.0.7
       vue: 3.5.39
-      xe-utils: 4.0.14
+      xe-utils: 4.1.2
 
   '@webassemblyjs/ast@1.14.1':
     dependencies:
@@ -7764,7 +7764,7 @@ snapshots:
   launch-editor@2.14.1:
     dependencies:
       picocolors: 1.1.1
-      shell-quote: 1.9.0
+      shell-quote: 1.12.0
 
   levn@0.4.1:
     dependencies:
@@ -8731,7 +8731,7 @@ snapshots:
 
   shebang-regex@3.0.0: {}
 
-  shell-quote@1.9.0: {}
+  shell-quote@1.12.0: {}
 
   side-channel-list@1.0.1:
     dependencies:
@@ -9228,7 +9228,7 @@ snapshots:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.39
 
-  vxe-table@4.21.10: {}
+  vxe-table@4.22.3: {}
 
   watchpack@2.5.2:
     dependencies:
@@ -9449,7 +9449,7 @@ snapshots:
 
   ws@8.21.0: {}
 
-  xe-utils@4.0.14: {}
+  xe-utils@4.1.2: {}
 
   y18n@5.0.8: {}
 
